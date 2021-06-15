@@ -4,6 +4,18 @@ body {
     font: normal 100% Cambria, Georgia, serif;
 }
 
+.container {
+    border: thin dashed #1818;
+}
+
+.row {
+    border: thin dashed blue;
+}
+
+.col {
+    border: thin solid yellow;
+}
+
 
 /*
 context : 16 px (default body)
@@ -33,26 +45,48 @@ h1 a {
 
 #page {
     border: 2px dashed #1818;
-    width: 960px;
-    margin: 0 auto;
+    width: 90%;
+    margin: 36px auto;
 }
 
-.blog section {
+.blog {
+    margin: 0 auto 53px;
     border: thin dashed greenyellow;
+    width: 93.75%;
+    /* 900px / 960px = 0.9375 */
+}
+
+.blog .main {
+    border: thin dashed aliceblue;
+    float: left;
+    width: 62.8888889;
+    /* 566 / 900 = 0.628888889 */
+}
+
+.blog .other {
+    float: right;
+    width: 36.77777778%;
+    border: thin dashed olivedrab;
+    /* 331 / 900 = 0.3677777778 */
+}
+
+.figure {
+    float: left;
+    margin-bottom: 0.5em;
+    margin-left: 2.22222222%;
+    width: 38.222222222%;
+    /* 344 / 900 */
+}
+
+img {
+    max-width: 100%;
 }
 
 .lede {
     border: thin dashed darkgrey;
 }
 
-.main {
-    border: thin dashed aliceblue;
-}
-
 .main ul li {
     font: bold 1em Roboto, Calibri, Optima, Arial, sans-serif;
-}
-
-.other {
-    border: thin dashed olivedrab;
+    height: 100%;
 }
