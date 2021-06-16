@@ -17,9 +17,15 @@
                 <img src="../assets/images/Reservia.svg" alt="reservia-logo" />
             </div>
             <div id="navigation">
-                <a href="#">Hebergement</a>
-                <a href="#">Activité</a>
-                <a href="#">S'inscrire</a>
+                <button class="tablinks">
+            <a href="#hostings" class="selected">Hebergement</a>
+          </button>
+                <button class="tablinks">
+            <a href="#activities" class="selected">Activité</a>
+          </button>
+                <button class="tablinks" id="inscription">
+            <strong>S'inscrire</strong>
+          </button>
             </div>
         </header>
 
@@ -39,52 +45,62 @@
 
         <div id="hostings">
             <div class="hosting">
-                <h5>Hebergements a Marseille</h5>
+                <h1>Hébergements à Marseille</h1>
 
-                <div class="figure">
-                    <img src="../assets/images/hebergement/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="" />
+                <div id="hosting-figures">
 
-                    <div class="container"><b>Auberge de la canebière</b></div>
+                    <div class="figure">
+                        <img src="../assets/images/hebergement/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="" />
+
+                        <div class="container"><b>Auberge de la Canebière</b></div>
+                    </div>
+                    <div class="figure">
+                        <img src="../assets/images/hebergement/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="" />
+                        <div class="container"><b>Hôtel du port</b></div>
+                    </div>
+                    <div class="figure">
+                        <img src="../assets/images/hebergement/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="" />
+                        <div class="container"><b>Hôtel des mouettes</b></div>
+                    </div>
+                    <div class="figure">
+                        <img src="../assets/images/hebergement/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="" />
+                        <div class="container"><b>Hôtel de la mer</b></div>
+                    </div>
+                    <div class="figure">
+                        <img src="../assets/images/hebergement/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="" />
+                        <div class="container"><b>Auberge le panier</b></div>
+                    </div>
+                    <div class="figure">
+                        <img src="../assets/images/hebergement/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="" />
+                        <div class="container"><b>Hôtel chez amina</b></div>
+                    </div>
                 </div>
-                <div class="figure">
-                    <img src="../assets/images/hebergement/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="" />
-                    <div class="container"><b>Hôtel du port</b></div>
-                </div>
-                <div class="figure">
-                    <img src="../assets/images/hebergement/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="" />
-                    <div class="container"><b>Hôtel des mouettes</b></div>
-                </div>
-                <div class="figure">
-                    <img src="../assets/images/hebergement/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="" />
-                    <div class="container"><b>Hôtel de la mer</b></div>
-                </div>
-                <div class="figure">
-                    <img src="../assets/images/hebergement/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="" />
-                    <div class="container"><b>Auberge le panier</b></div>
-                </div>
-                <div class="figure">
-                    <img src="../assets/images/hebergement/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="" />
-                    <div class="container"><b>Hôtel chez amina</b></div>
-                </div>
+
+
             </div>
             <div class="popular">
-                <h3>Les plus populaires</h3>
-                <div class="figure">
-                    <img src="../assets/images/hebergement/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="" />
-                    <div class="container"><b>Hôtel le soleil du matin</b> </div>
-                </div>
-                <div class="figure">
-                    <img src="../assets/images/hebergement/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="" />
-                    <div class="container"><b>Au coeur de l'eau Chambre d'Hôtes</b></div>
-                </div>
-                <div class="figure">
-                    <img src="../assets/images/hebergement/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="" />
-                    <div class="container"><b>Hôtel tout Bleu et BLanc</b></div>
+                <h1>Les plus populaires</h1>
+                <div id="popular-figures">
+                    <div class="figure">
+                        <img src="../assets/images/hebergement/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="" />
+                        <div class="container"><b>Hôtel le soleil du matin</b></div>
+                    </div>
+                    <div class="figure">
+                        <img src="../assets/images/hebergement/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="" />
+                        <div class="container">
+                            <b>Au coeur de l'eau Chambre d'Hôtes</b>
+                        </div>
+                    </div>
+                    <div class="figure">
+                        <img src="../assets/images/hebergement/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="" />
+                        <div class="container"><b>Hôtel tout Bleu et BLanc</b></div>
+                    </div>
+
                 </div>
             </div>
         </div>
 
-        <div id="activities">
+        <div id="activities" class="tab-content">
             <h3>Activités a marseille</h3>
             <div class="figure">
                 <img src="../assets/images/activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="" />
@@ -93,7 +109,6 @@
             <div class="figure">
                 <img src="../assets/images/activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="" />
                 <div class="container"><b>Port de Pomègues</b></div>
-
             </div>
             <div class="figure">
                 <img src="../assets/images/activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="" />

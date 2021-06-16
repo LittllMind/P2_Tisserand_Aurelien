@@ -1,5 +1,4 @@
 #page {
-    border: 2px dashed #1818;
     width: 95%;
     margin: 36px auto;
     display: flex;
@@ -7,7 +6,14 @@
 }
 
 header {
-    height: 100%;
+    height: 4em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 2.34375%;
+    padding-left: 2.34375%;
+    position: initial;
 }
 
 header #logo {
@@ -16,6 +22,24 @@ header #logo {
 
 header #navigation {
     float: right;
+}
+
+button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: grab;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+a {
+    text-decoration: none;
+}
+
+#inscription {
+    color: #4F94FC;
 }
 
 #search {
@@ -35,8 +59,19 @@ header #navigation {
     width: 65.65656565656566%;
     border: dashed thin aliceblue;
     float: left;
-    background-color: #CFD1CF;
+    background-color: #F2F2F2;
     border-radius: 30px;
+    padding: 37px 37px 37px 37px;
+}
+
+.hosting h1 {
+    padding-left: 2.34042553191489%;
+    font: bold 1.6em Calibri, Optima, Arial, sans-serif;
+}
+
+#hosting-figures {
+    display: flex;
+    justify-content: space-between;
 }
 
 .popular {
@@ -44,8 +79,20 @@ header #navigation {
     width: 31.14478114478114%;
     border: dashed thin aliceblue;
     float: right;
-    background-color: #CFD1CF;
+    background-color: #F2F2F2;
     border-radius: 30px;
+}
+
+.popular h1 {
+    padding-left: 9.46601941747573%;
+    font: bold 1.6em Calibri, Optima, Arial, sans-serif;
+}
+
+#popular-figures {
+    padding-left: 7%;
+    padding-right: 7%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .hosting .figure {
@@ -94,4 +141,8 @@ header #navigation {
     width: 100%;
     background-color: #F2F2F2;
     border-radius: 0 0 20px 20px;
+}
+
+footer {
+    background-color: #F2F2F2;
 }
