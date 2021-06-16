@@ -52,12 +52,15 @@ header #navigation {
     float: left;
     margin-bottom: 0.5em;
     margin-left: 2.22222222%;
-    width: 27.69230769230769%;
     /* 344 / 900 */
+    width: 27.69230769230769%;
+    /* 90 / 344 */
+    height: 23.076923076923%;
 }
 
 .popular .figure {
     float: left;
+    align-content: flex-start;
     margin-bottom: 0.5em;
     margin-left: 2.22222222%;
     width: 58.37837837837838%;
@@ -75,9 +78,20 @@ header #navigation {
     float: left;
     margin-bottom: 0.5em;
     margin-left: 2.22222222%;
-    max-width: 22.81879194630872%;
+    width: 22.81879194630872%;
 }
 
-img {
+.figure img {
     max-width: 100%;
+    background-color: #F2F2F2;
+    padding: 1%;
+    border-radius: 20px 20px 0 0;
+}
+
+.figure .container {
+    text-align: left;
+    padding: 10px 20px;
+    width: 100%;
+    background-color: #F2F2F2;
+    border-radius: 0 0 20px 20px;
 }
