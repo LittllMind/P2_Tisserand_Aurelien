@@ -1,1 +1,83 @@
+#page {
+    border: 2px dashed #1818;
+    width: 95%;
+    margin: 36px auto;
+    display: flex;
+    flex-direction: column;
+}
 
+header {
+    height: 100%;
+}
+
+header #logo {
+    float: left;
+}
+
+header #navigation {
+    float: right;
+}
+
+#search {
+    display: flex;
+    flex-direction: column;
+    width: 93.125%;
+}
+
+#hosting {
+    /*594 / 640 */
+    width: 93.125%;
+    justify-content: space-around;
+}
+
+.hosting {
+    /* 390 / 594 */
+    width: 65.65656565656566%;
+    border: dashed thin aliceblue;
+    float: left;
+    background-color: #CFD1CF;
+    border-radius: 30px;
+}
+
+.popular {
+    /* 185 / 594 */
+    width: 31.14478114478114%;
+    border: dashed thin aliceblue;
+    float: right;
+    background-color: #CFD1CF;
+    border-radius: 30px;
+}
+
+.hosting .figure {
+    float: left;
+    margin-bottom: 0.5em;
+    margin-left: 2.22222222%;
+    width: 27.69230769230769%;
+    /* 344 / 900 */
+}
+
+.popular .figure {
+    float: left;
+    margin-bottom: 0.5em;
+    margin-left: 2.22222222%;
+    width: 58.37837837837838%;
+    /* 344 / 900 */
+}
+
+#activities {
+    width: 93.125%;
+    /* 596 / 640 */
+    border: dashed thin aliceblue;
+    float: left;
+}
+
+#activities .figure {
+    float: left;
+    margin-bottom: 0.5em;
+    margin-left: 2.22222222%;
+    max-width: 22.81879194630872%;
+}
+
+img {
+    max-width: 100%;
+}
