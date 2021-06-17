@@ -1,6 +1,7 @@
 #page {
     width: 95%;
-    margin: 36px auto;
+    margin-left: 3.5%;
+    margin-right: 3.5%;
     display: flex;
     flex-direction: column;
 }
@@ -9,32 +10,46 @@ header {
     height: 4em;
     width: 100%;
     display: flex;
-    align-items: center;
+    margin-top: 2.8%;
+    margin-bottom: 2.4%;
+    margin-left: 1%;
     justify-content: space-between;
-    padding-right: 2.34375%;
-    padding-left: 2.34375%;
-    position: initial;
 }
 
 header #logo {
     float: left;
 }
 
-header #navigation {
-    float: right;
+#logo img {
+    width: 130px
 }
 
-button {
+header #navigation {
+    float: right;
+    width: 64.64%;
+    display: flex;
+    justify-content: right;
+    margin-left: 30%;
+}
+
+header #registration {
+    float: right;
+    padding-right: 3.5%;
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#navigation button {
     background-color: inherit;
-    float: left;
     border: none;
     outline: none;
     cursor: grab;
-    padding: 14px 16px;
     transition: 0.3s;
+    padding-left: 15%;
 }
 
-a {
+#navigation button a {
     text-decoration: none;
 }
 
@@ -42,10 +57,26 @@ a {
     color: #4F94FC;
 }
 
+#registration button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: grab;
+    transition: 0.3s;
+}
+
 #search {
     display: flex;
     flex-direction: column;
     width: 93.125%;
+}
+
+.search-indication h1 {
+    font: bold 1.6em Calibri, Optima, Arial, sans-serif;
+}
+
+.search-indication h2 {
+    font: 1.3em Calibri, Optima, Arial, sans-serif;
 }
 
 #hosting {
