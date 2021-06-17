@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "raleway";
+    src: url(../font/Raleway-VariableFont_wght.ttf) format("truetype"), url("../font/Raleway-VariableFont_wght.ttf") format("ttf");
+}
+
 #page {
     width: 95%;
     margin-left: 3.5%;
@@ -77,14 +82,57 @@ header #registration {
     display: flex;
     flex-direction: column;
     width: 100%;
+    border: thin dashed #1818;
+}
+
+#search .fa {
+    color: #0065FC;
 }
 
 .search-indication h1 {
-    font: bold 1.6em Calibri, Optima, Arial, sans-serif;
+    font: bold 1.6em raleway, Calibri, Optima, Arial, sans-serif;
 }
 
 .search-indication h2 {
-    font: 1.2em Calibri, Optima, Arial, sans-serif;
+    font: 1.2em raleway, Calibri, Optima, Arial, sans-serif;
+}
+
+.filtres {
+    margin: 1%;
+    display: flex;
+    align-items: center;
+}
+
+.filtres h3 {
+    font: bold 1.2em raleway, Calibri, Optima, Arial, sans-serif;
+    padding-left: 0;
+    margin-left: 0;
+    margin-right: 2%
+}
+
+.filtre {
+    display: flex;
+    align-items: center;
+    border: 3px solid #F2F2F2;
+    border-radius: 30px 30px 30px 30px;
+    padding-top: 1.4%;
+    padding-bottom: 1.4%;
+    width: 15%;
+    position: relative;
+}
+
+.filtre i {
+    background-color: #DEEBFF;
+    border-radius: 50%;
+    padding: 7%;
+    position: static;
+    z-index: 1;
+    position: absolute;
+}
+
+.filtre b {
+    position: absolute;
+    margin-left: 30%;
 }
 
 
@@ -113,7 +161,7 @@ header #registration {
 
 .hosting h1 {
     padding-left: 2.34042553191489%;
-    font: bold 1.6em Calibri, Optima, Arial, sans-serif;
+    font: bold 1.6em raleway, Calibri, Optima, Arial, sans-serif;
 }
 
 .hosting .figure {
@@ -126,6 +174,9 @@ header #registration {
     height: 23.076923076923%;
 }
 
+
+/* -------------------------------- P O P U L A R                */
+
 .popular {
     /* 185 / 594 */
     width: 31.14478114478114%;
@@ -137,14 +188,14 @@ header #registration {
 
 .popular h1 {
     padding-left: 9.46601941747573%;
-    font: bold 1.6em Calibri, Optima, Arial, sans-serif;
+    font: bold 1.6em raleway, Calibri, Optima, Arial, sans-serif;
 }
 
 #popular-figures {
     padding-left: 7%;
     padding-right: 7%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
 
