@@ -6,6 +6,9 @@
     flex-direction: column;
 }
 
+
+/* -------------------------------- H E A D E R                 */
+
 header {
     height: 4em;
     width: 100%;
@@ -65,10 +68,15 @@ header #registration {
     transition: 0.3s;
 }
 
+
+/* -------------------------------- S E A R C H               */
+
 #search {
+    padding-left: 1%;
+    margin-bottom: 3%;
     display: flex;
     flex-direction: column;
-    width: 93.125%;
+    width: 100%;
 }
 
 .search-indication h1 {
@@ -76,13 +84,21 @@ header #registration {
 }
 
 .search-indication h2 {
-    font: 1.3em Calibri, Optima, Arial, sans-serif;
+    font: 1.2em Calibri, Optima, Arial, sans-serif;
 }
 
-#hosting {
+
+/* -------------------------------- H O S T I N G S               */
+
+#hostings {
     /*594 / 640 */
-    width: 93.125%;
+    width: 100%;
     justify-content: space-around;
+}
+
+#hostings-figures {
+    display: flex;
+    justify-content: space-between;
 }
 
 .hosting {
@@ -100,9 +116,14 @@ header #registration {
     font: bold 1.6em Calibri, Optima, Arial, sans-serif;
 }
 
-#hosting-figures {
-    display: flex;
-    justify-content: space-between;
+.hosting .figure {
+    float: left;
+    margin-bottom: 0.5em;
+    margin-left: 2.22222222%;
+    /* 344 / 900 */
+    width: 27.69230769230769%;
+    /* 90 / 344 */
+    height: 23.076923076923%;
 }
 
 .popular {
@@ -126,24 +147,8 @@ header #registration {
     justify-content: space-between;
 }
 
-.hosting .figure {
-    float: left;
-    margin-bottom: 0.5em;
-    margin-left: 2.22222222%;
-    /* 344 / 900 */
-    width: 27.69230769230769%;
-    /* 90 / 344 */
-    height: 23.076923076923%;
-}
 
-.popular .figure {
-    float: left;
-    align-content: flex-start;
-    margin-bottom: 0.5em;
-    margin-left: 2.22222222%;
-    width: 58.37837837837838%;
-    /* 344 / 900 */
-}
+/* -------------------------------- A C T I V I T I E S               */
 
 #activities {
     width: 93.125%;
@@ -162,15 +167,15 @@ header #registration {
 .figure img {
     max-width: 100%;
     background-color: #F2F2F2;
-    padding: 1%;
     border-radius: 20px 20px 0 0;
+    border: 5px solid #FFFFFF;
 }
 
 .figure .container {
     text-align: left;
     padding: 10px 20px;
     width: 100%;
-    background-color: #F2F2F2;
+    background-color: #FFFFFF;
     border-radius: 0 0 20px 20px;
 }
 
