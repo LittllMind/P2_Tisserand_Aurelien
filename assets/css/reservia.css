@@ -82,7 +82,6 @@ header #registration {
     display: flex;
     flex-direction: column;
     width: 100%;
-    border: thin dashed #1818;
 }
 
 #search .fa {
@@ -117,8 +116,10 @@ header #registration {
     border-radius: 30px 30px 30px 30px;
     padding-top: 1.4%;
     padding-bottom: 1.4%;
-    width: 15%;
+    margin-right: 1.4%;
+    width: 220px;
     position: relative;
+    margin-right: 1.5%;
 }
 
 .filtre i {
@@ -133,6 +134,30 @@ header #registration {
 .filtre b {
     position: absolute;
     margin-left: 30%;
+}
+
+
+/* -------------------------------- I N F O                    */
+
+.info {
+    align-items: center;
+}
+
+.info .details {
+    display: flex;
+    align-items: center;
+}
+
+.info .details i {
+    border-radius: 50%;
+    border: thin solid #F2F2F2;
+    padding: 0.5%;
+    position: static;
+}
+
+.info .details p {
+    font: 0.8em raleway, Calibri, Optima, Arial, sans-serif;
+    margin-left: 2%;
 }
 
 
