@@ -76,6 +76,15 @@ header #registration {
 
 /* -------------------------------- S E A R C H               */
 
+#search {
+    background-color: #0065FC;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    outline: none;
+    cursor: grab;
+    transition: 0.3s;
+}
+
 .search {
     padding-left: 1%;
     margin-bottom: 3%;
@@ -84,8 +93,8 @@ header #registration {
     width: 100%;
 }
 
-.search .fa {
-    color: #0065FC;
+#search .fa {
+    color: #FFFFFF;
 }
 
 .search-indication h1 {
@@ -111,15 +120,6 @@ header #registration {
 
 #localize i {
     color: black;
-}
-
-#search {
-    background-color: #020202;
-    border-radius: 0 10px 10px 0;
-    border: none;
-    outline: none;
-    cursor: grab;
-    transition: 0.3s;
 }
 
 #search i {
@@ -204,12 +204,6 @@ header #registration {
     width: 100%;
 }
 
-#hosting-figures {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
 .hosting {
     /* 390 / 594 */
     width: 65.65656565656566%;
@@ -217,18 +211,24 @@ header #registration {
     float: left;
     background-color: #F2F2F2;
     border-radius: 20px;
-    padding: 37px 37px 37px 37px;
+    padding: 3% 3% 3% 3%;
+    margin: 0 auto;
 }
 
 .hosting h1 {
     padding-left: 2.34042553191489%;
-    font: bold 1.3em raleway, Calibri, Optima, Arial, sans-serif;
+    font: bold 1em raleway, Calibri, Optima, Arial, sans-serif;
+}
+
+#hosting-figures {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #hosting-figures .figure {
     float: left;
     margin-bottom: 0.5em;
-    margin-left: 2.22222222%;
     /* 344 / 900 */
     width: 30.69230769230769%;
     /* 90 / 344 */
@@ -268,18 +268,62 @@ header #registration {
 
 /* -------------------------------- P O P U L A R                */
 
+#populars {
+    /*594 / 640 */
+    width: 100%;
+}
+
 .popular {
     /* 185 / 594 */
     width: 31.14478114478114%;
     border: dashed thin aliceblue;
     float: right;
+    padding-top: 3%;
+    padding: 3% 0.5% 0.5% 0.5%;
     background-color: #F2F2F2;
     border-radius: 30px;
 }
 
 .popular h1 {
     padding-left: 9.46601941747573%;
-    font: bold 1.3em raleway, Calibri, Optima, Arial, sans-serif;
+    font: bold 1em raleway, Calibri, Optima, Arial, sans-serif;
+}
+
+#popular-figures .figure {
+    width: 100%;
+    margin: 0 auto;
+    float: left;
+    margin-bottom: 0.5em;
+}
+
+#popular-figures .figure img {
+    width: 300%;
+    background-color: #F2F2F2;
+    border-radius: 20px 0 0 20px;
+    box-shadow: 0 0 3px #E5E5E5;
+    border: 5px solid #FFFFFF;
+}
+
+#popular-figures .figure .container {
+    padding-top: 3%;
+    width: 300%;
+    text-align: left;
+    background-color: #FFFFFF;
+    border-radius: 0 20px 20px 0;
+    box-shadow: 0 0 2px #E5E5E5;
+    font: bold 0.7em raleway, Calibri, Optima, Arial, sans-serif;
+}
+
+#popular-figures .container p {
+    padding-top: 5%;
+}
+
+#popular-figures .figure .container .fa-star {
+    color: #F2F2F2;
+}
+
+#popular-figures .figure .container .checked {
+    color: #0065FC;
 }
 
 #popular-figures {
