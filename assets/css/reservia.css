@@ -76,7 +76,7 @@ header #registration {
 
 /* -------------------------------- S E A R C H               */
 
-#search {
+.search {
     padding-left: 1%;
     margin-bottom: 3%;
     display: flex;
@@ -84,7 +84,7 @@ header #registration {
     width: 100%;
 }
 
-#search .fa {
+.search .fa {
     color: #0065FC;
 }
 
@@ -95,6 +95,31 @@ header #registration {
 .search-indication h2 {
     font: 1.2em raleway, Calibri, Optima, Arial, sans-serif;
 }
+
+#localize {
+    background-color: #F2F2F2;
+    border-radius: 10px 0 0 10px;
+    border: none;
+    outline: none;
+    cursor: grab;
+    transition: 0.3s;
+}
+
+#search {
+    background-color: #0065FC;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    outline: none;
+    cursor: grab;
+    transition: 0.3s;
+}
+
+#search i {
+    color: #FFFFFF;
+}
+
+
+/* -------------------------------- F I L T R E S               */
 
 .filtres {
     margin: 1%;
@@ -141,6 +166,7 @@ header #registration {
 
 .info {
     align-items: center;
+    align-items: center;
 }
 
 .info .details {
@@ -158,6 +184,7 @@ header #registration {
 .info .details p {
     font: 0.8em raleway, Calibri, Optima, Arial, sans-serif;
     margin-left: 2%;
+    width: 50%;
 }
 
 
