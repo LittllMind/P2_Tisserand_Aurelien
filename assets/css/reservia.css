@@ -4,7 +4,7 @@
 }
 
 #page {
-    width: 80%;
+    width: 77%;
     margin-left: 3.5%;
     margin-right: 3.5%;
     display: flex;
@@ -341,19 +341,100 @@ header #registration {
 /* -------------------------------- A C T I V I T I E S               */
 
 #activities {
-    width: 93.125%;
+    /*594 / 640 */
     /* 596 / 640 */
     border: dashed thin aliceblue;
     float: left;
 }
 
-#activities .figure {
+.activitie {
+    /* 390 / 594 */
     float: left;
-    margin-bottom: 0.5em;
-    margin-left: 2.22222222%;
-    width: 22.81879194630872%;
+    padding: 3% 0% 0% 0%;
+    margin: 0 auto;
 }
 
-footer {
+.activitie h1 {
+    font: bold 1em raleway, Calibri, Optima, Arial, sans-serif;
+}
+
+#activitie-figures {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+#activitie-figures .figure {
+    float: left;
+    margin-bottom: 0.5em;
+    width: 90.5%;
+    /* 344 / 900 */
+}
+
+#activitie-figures .hight .figure {}
+
+#activitie-figures .small .figure {}
+
+#activitie-figures .figure img {
+    max-width: 100%;
     background-color: #F2F2F2;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 0 3px #E5E5E5;
+}
+
+#activitie-figures .figure .container {
+    text-align: left;
+    padding: 10px 20px;
+    width: 100%;
+    background-color: #FFFFFF;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 0 2px #E5E5E5;
+    font: bold 0.7em raleway, Calibri, Optima, Arial, sans-serif;
+}
+
+#activitie-figures .figure .container p {
+    padding-top: 5%;
+}
+
+
+/* -------------------------------- F O O T E R             */
+
+footer {
+    width: 80%;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: flex-start;
+}
+
+footer h1 {
+    font: bold 0.8em raleway, Calibri, Optima, Arial, sans-serif;
+    margin-left: 20%;
+    margin-top: 10%;
+}
+
+.about {
+    padding-right: 20%;
+    border: thin dashed #1818;
+}
+
+.our-hostings {
+    padding-right: 20%;
+    border: thin dashed #1818;
+}
+
+.assistance {
+    border: thin dashed #1818;
+    padding-right: 20%;
+}
+
+footer ul {
+    list-style-type: none;
+    width: 100%;
+    margin-left: 0%
+}
+
+footer ul li {
+    font: 0.7em raleway, Calibri, Optima, Arial, sans-serif;
+    margin-top: 10%;
+    margin-bottom: 2%;
 }
