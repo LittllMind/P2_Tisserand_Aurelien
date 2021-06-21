@@ -308,7 +308,7 @@ header #registration {
 }
 
 #popular-figures .figure img {
-    width: 300%;
+    max-width: 70%;
     background-color: #F2F2F2;
     border-radius: 20px 0 0 20px;
     box-shadow: 0 0 3px #E5E5E5;
