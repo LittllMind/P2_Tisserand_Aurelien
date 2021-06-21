@@ -376,6 +376,18 @@ header #registration {
     justify-content: space-between;
 }
 
+#activities-figures .hight {
+    height: 100%;
+}
+
+#activities-figures .hight .figure {
+    height: 100%;
+}
+
+#activitie-figures .small {
+    height: 100%;
+}
+
 #activitie-figures .figure {
     float: left;
     margin-bottom: 0.5em;
@@ -421,16 +433,19 @@ footer h1 {
 }
 
 .about {
+    width: 33%;
     padding-right: 20%;
     border: thin dashed #1818;
 }
 
 .our-hostings {
+    width: 33%;
     padding-right: 20%;
     border: thin dashed #1818;
 }
 
 .assistance {
+    width: 33%;
     border: thin dashed #1818;
     padding-right: 20%;
 }
