@@ -23,7 +23,6 @@ header {
     margin-left: 1%;
     justify-content: space-between;
     align-items: center;
-    border: thin dashed #1818;
 }
 
 header #logo {
@@ -129,7 +128,6 @@ header #registration {
     margin: 1%;
     display: flex;
     align-items: center;
-    border: thin dashed #1818;
 }
 
 .filtres h3 {
@@ -183,7 +181,6 @@ header #registration {
     /* alig-items ??*/
     align-items: center;
     justify-content: flex-start;
-    border: thin dashed #1818;
 }
 
 .info .detail i {
@@ -212,7 +209,6 @@ header #registration {
 
 #hostings {
     width: 100%;
-    border: thin dashed #1818;
     justify-content: left;
 }
 
@@ -239,10 +235,12 @@ header #registration {
 
 .hosting-figures .figure {
     margin-bottom: 0.5em;
+    position: relative;
 }
 
 .hosting-figures .figure img {
     max-width: 100%;
+    height: auto;
     background-color: #F2F2F2;
     border-radius: 20px 20px 0 0;
     box-shadow: 0 0 3px #E5E5E5;
