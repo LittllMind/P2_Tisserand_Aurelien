@@ -1,10 +1,10 @@
 @font-face {
     font-family: "raleway";
-    src: url(../font/Raleway-VariableFont_wght.ttf) format("truetype"), url("../font/Raleway-VariableFont_wght.ttf") format("eot");
+    src: url(../font/Raleway-VariableFont_wght.ttf) format("truetype"), url("../font/Raleway-VariableFont_wght.ttf") format("ttf");
 }
 
 #page {
-    width: 77%;
+    width: 74%;
     margin-left: 3.5%;
     margin-right: 3.5%;
     display: flex;
@@ -29,7 +29,7 @@ header #logo {
 }
 
 #logo img {
-    width: 130px
+    width: 130px;
 }
 
 header #navigation {
@@ -38,14 +38,6 @@ header #navigation {
     display: flex;
     justify-content: right;
     margin-left: 30%;
-}
-
-header #registration {
-    float: right;
-    padding-right: 3.5%;
-    width: 20%;
-    display: flex;
-    justify-content: flex-end;
 }
 
 #navigation button {
@@ -59,13 +51,19 @@ header #registration {
 
 #navigation button a {
     text-decoration: none;
+    color: #4F5255;
 }
 
-#inscription {
-    color: #4F94FC;
+header #registration {
+    float: right;
+    padding-right: 3.5%;
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 #registration button {
+    color: #4F94FC;
     background-color: inherit;
     border: none;
     outline: none;
@@ -76,25 +74,12 @@ header #registration {
 
 /* -------------------------------- S E A R C H               */
 
-#search {
-    background-color: #0065FC;
-    border-radius: 0 10px 10px 0;
-    border: none;
-    outline: none;
-    cursor: grab;
-    transition: 0.3s;
-}
-
 .search {
     padding-left: 1%;
     margin-bottom: 3%;
     display: flex;
     flex-direction: column;
     width: 100%;
-}
-
-#search .fa {
-    color: #FFFFFF;
 }
 
 .search-indication h1 {
@@ -122,7 +107,20 @@ header #registration {
     color: black;
 }
 
-#search i {
+#button-search {
+    background-color: #0065FC;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    outline: none;
+    cursor: grab;
+    transition: 0.3s;
+}
+
+#button-search .fa {
+    color: #FFFFFF;
+}
+
+#button-search i {
     color: #FFFFFF;
 }
 
@@ -133,10 +131,11 @@ header #registration {
     margin: 1%;
     display: flex;
     align-items: center;
+    border: thin dashed #1818;
 }
 
 .filtres h3 {
-    font: bold 1.2em raleway, Calibri, Optima, Arial, sans-serif;
+    font: bold 0.9em raleway, Calibri, Optima, Arial, sans-serif;
     padding-left: 0;
     margin-left: 0;
     margin-right: 2%
@@ -149,19 +148,21 @@ header #registration {
     border-radius: 30px 30px 30px 30px;
     padding-top: 20px;
     padding-bottom: 20px;
-    margin-right: 20px;
+    margin-right: 15px;
     position: relative;
-    margin-right: 1.5%;
+    margin-right: 1%;
     width: 220px;
 }
 
 .filtre i {
     background-color: #DEEBFF;
+    border: 1px solid #DEEBFF;
     border-radius: 50%;
     padding: 7%;
     position: static;
     z-index: 1;
     position: absolute;
+    color: #0065FC;
 }
 
 .filtre b {
@@ -178,21 +179,33 @@ header #registration {
     align-items: center;
 }
 
-.info .details {
+.info .detail {
+    flex-direction: row;
     display: flex;
+    /* alig-items ??*/
     align-items: center;
+    justify-content: flex-start;
+    border: thin dashed #1818;
 }
 
-.info .details i {
-    border-radius: 50%;
+.info .detail i {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.info .detail .fa {
+    color: #0065FC;
+    width: 1.6em;
     border: thin solid #F2F2F2;
+    border-radius: 50%;
     padding: 0.5%;
     position: static;
 }
 
-.info .details p {
+.info .detail p {
     font: 0.8em raleway, Calibri, Optima, Arial, sans-serif;
-    margin-left: 2%;
+    margin-left: 1.7%;
     width: 50%;
 }
 
@@ -200,14 +213,13 @@ header #registration {
 /* -------------------------------- H O S T I N G S               */
 
 #hostings {
-    /*594 / 640 */
     width: 100%;
+    border: thin dashed #1818;
 }
 
 .hosting {
     /* 390 / 594 */
     width: 65.65656565656566%;
-    border: dashed thin aliceblue;
     float: left;
     background-color: #F2F2F2;
     border-radius: 20px;
@@ -232,6 +244,7 @@ header #registration {
     /* 344 / 900 */
     width: 30.69230769230769%;
     /* 90 / 344 */
+    /* height */
     height: 23.076923076923%;
 }
 
