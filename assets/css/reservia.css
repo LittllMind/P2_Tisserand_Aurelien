@@ -22,6 +22,8 @@ header {
     margin-bottom: 2.4%;
     margin-left: 1%;
     justify-content: space-between;
+    align-items: center;
+    border: thin dashed #1818;
 }
 
 header #logo {
@@ -40,16 +42,12 @@ header #navigation {
     margin-left: 30%;
 }
 
-#navigation button {
+#navigation a {
     background-color: inherit;
-    border: none;
-    outline: none;
-    cursor: grab;
-    transition: 0.3s;
     padding-left: 15%;
 }
 
-#navigation button a {
+#navigation a {
     text-decoration: none;
     color: #4F5255;
 }
@@ -232,13 +230,13 @@ header #registration {
     font: bold 1em raleway, Calibri, Optima, Arial, sans-serif;
 }
 
-#hosting-figures {
+.hosting-figures {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-#hosting-figures .figure {
+.hosting-figures .figure {
     float: left;
     margin-bottom: 0.5em;
     /* 344 / 900 */
@@ -248,7 +246,7 @@ header #registration {
     height: 23.076923076923%;
 }
 
-#hosting-figures .figure img {
+.hosting-figures .figure img {
     max-width: 100%;
     background-color: #F2F2F2;
     border-radius: 20px 20px 0 0;
@@ -256,7 +254,7 @@ header #registration {
     border: 5px solid #FFFFFF;
 }
 
-#hosting-figures .figure .container {
+.hosting-figures .figure .container {
     text-align: left;
     padding: 10px 20px;
     width: 100%;
@@ -266,15 +264,15 @@ header #registration {
     font: bold 0.7em raleway, Calibri, Optima, Arial, sans-serif;
 }
 
-#hosting-figures .container p {
+.hosting-figures .container p {
     padding-top: 5%;
 }
 
-#hosting-figures .figure .container .fa-star {
+.hosting-figures .figure .container .fa-star {
     color: #F2F2F2;
 }
 
-#hosting-figures .figure .container .checked {
+.hosting-figures .figure .container .checked {
     color: #0065FC;
 }
 
