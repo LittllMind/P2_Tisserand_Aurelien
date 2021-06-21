@@ -213,16 +213,16 @@ header #registration {
 #hostings {
     width: 100%;
     border: thin dashed #1818;
+    justify-content: left;
 }
 
 .hosting {
     /* 390 / 594 */
-    width: 65.65656565656566%;
-    float: left;
     background-color: #F2F2F2;
     border-radius: 20px;
-    padding: 3% 3% 3% 3%;
+    padding: 2% 2% 2% 2%;
     margin: 0 auto;
+    float: left;
 }
 
 .hosting h1 {
@@ -238,13 +238,7 @@ header #registration {
 }
 
 .hosting-figures .figure {
-    float: left;
     margin-bottom: 0.5em;
-    /* 344 / 900 */
-    width: 30.69230769230769%;
-    /* 90 / 344 */
-    /* height */
-    height: 23.076923076923%;
 }
 
 .hosting-figures .figure img {
@@ -280,20 +274,14 @@ header #registration {
 
 /* -------------------------------- P O P U L A R                */
 
-#populars {
-    /*594 / 640 */
-    width: 100%;
-}
-
 .popular {
     /* 185 / 594 */
     width: 31.14478114478114%;
     border: dashed thin aliceblue;
-    float: right;
     padding-top: 3%;
-    padding: 3% 0.5% 0.5% 0.5%;
     background-color: #F2F2F2;
     border-radius: 30px;
+    float: right;
 }
 
 .popular h1 {
@@ -303,8 +291,6 @@ header #registration {
 
 #popular-figures .figure {
     width: 100%;
-    margin: 0 auto;
-    float: left;
     margin-bottom: 0.5em;
 }
 
@@ -420,7 +406,6 @@ header #registration {
 /* -------------------------------- F O O T E R             */
 
 footer {
-    width: 100%;
     background-color: #F2F2F2;
     display: flex;
     justify-content: flex-start;
