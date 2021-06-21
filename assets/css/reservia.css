@@ -4,7 +4,7 @@
 }
 
 #page {
-    width: 74%;
+    width: 93%;
     margin-left: 3.5%;
     margin-right: 3.5%;
     display: flex;
@@ -234,6 +234,7 @@ header #registration {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 50%;
 }
 
 .hosting-figures .figure {
@@ -382,10 +383,6 @@ header #registration {
     /* 344 / 900 */
 }
 
-#activitie-figures .hight .figure {}
-
-#activitie-figures .small .figure {}
-
 #activitie-figures .figure img {
     max-width: 100%;
     background-color: #F2F2F2;
@@ -411,7 +408,7 @@ header #registration {
 /* -------------------------------- F O O T E R             */
 
 footer {
-    width: 80%;
+    width: 100%;
     background-color: #F2F2F2;
     display: flex;
     justify-content: flex-start;
