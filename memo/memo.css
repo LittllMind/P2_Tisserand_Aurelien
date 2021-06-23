@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'ralewaythin';
+    src: url('../assets/font/raleway/raleway-variablefont_wght-webfont.eot');
+    src: url('../assets/font/raleway/raleway-variablefont_wght-webfont.eot?#iefix') format('embedded-opentype'), url('../assets/font/raleway/raleway-variablefont_wght-webfont.woff2') format('woff2'), url('../assets/font/raleway/raleway-variablefont_wght-webfont.woff') format('woff'), url('../assets/font/raleway/raleway-variablefont_wght-webfont.ttf') format('truetype'), url('../assets/font/raleway/raleway-variablefont_wght-webfont.svg#ralewaythin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     background-color: #DCDBD9;
     color: #2C2C2C;
@@ -9,6 +17,26 @@ body {
 }
 
 .row {
+    justify-content: space-around;
+}
+
+.row .main #static {
+    position: static;
+}
+
+.row .main #relative {
+    position: relative;
+}
+
+.row .main #absolute {
+    position: absolute;
+}
+
+.row .main #fixed {
+    position: fixed;
+}
+
+.row div {
     border: thin dashed blue;
 }
 
@@ -47,6 +75,8 @@ h1 a {
     border: 2px dashed #1818;
     width: 90%;
     margin: 36px auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .blog {
@@ -87,6 +117,15 @@ img {
 }
 
 .main ul li {
-    font: bold 1em Roboto, Calibri, Optima, Arial, sans-serif;
+    font: 0.69em Roboto, Calibri, Optima, Arial, sans-serif;
     height: 100%;
+}
+
+.main ul li p {
+    font: bold;
+    margin-top: 5%;
+}
+
+.other h1 {
+    font: 1.2em 'ralewaythin', calibri, Optima, Arial, sans-serif;
 }
