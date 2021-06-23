@@ -219,6 +219,7 @@ header #registration {
     padding: 2% 2% 2% 2%;
     margin: 0 auto;
     float: left;
+    height: 100%;
 }
 
 .hosting h1 {
@@ -230,17 +231,24 @@ header #registration {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 50%;
+}
+
+.wrapper .content {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 .hosting-figures .figure {
+    overflow: hidden;
     margin-bottom: 0.5em;
-    position: relative;
+    /**/
 }
 
 .hosting-figures .figure img {
-    max-width: 100%;
-    height: auto;
+    display: block;
+    max-width: auto;
+    height: 14vw;
     background-color: #F2F2F2;
     border-radius: 20px 20px 0 0;
     box-shadow: 0 0 3px #E5E5E5;
