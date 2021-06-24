@@ -18,9 +18,9 @@
 /* -------------------------------- N A V                  */
 
 nav {
-    position: relative;
+    position: static;
     top: 0;
-    height: 5em;
+    height: 8em;
     width: 100%;
     display: flex;
     justify-content: flex-end;
@@ -94,13 +94,13 @@ nav #registration button {
 /* -------------------------------- H E A D E R                 */
 
 header {
-    position: relative;
+    position: absolute;
+    display: flex;
+    align-items: center;
     top: 0;
-    height: 5em;
+    height: 8em;
     width: 100%;
     display: flex;
-    margin-top: 2.8%;
-    margin-bottom: 2.4%;
     margin-left: 1%;
     justify-content: space-between;
     border: thin dashed #1818;
@@ -111,7 +111,7 @@ header #logo {
 }
 
 header #logo img {
-    width: 130px;
+    width: 100px;
 }
 
 
@@ -133,11 +133,22 @@ header #logo img {
     font: 1em 'raleway', Calibri, Optima, Arial, sans-serif;
 }
 
-.input-group {
-    width: 360px;
+.search .input-group {
+    height: 50px;
+    width: 390px;
 }
 
-#localize {
+.localise {
+    width: 13.29%;
+}
+
+.localise span {
+    display: flex;
+    justify-content: center;
+}
+
+.search .input-group #localize {
+    width: 100%;
     background-color: #F2F2F2;
     border-radius: 10px 0 0 10px;
     border: none;
@@ -146,11 +157,16 @@ header #logo img {
     transition: 0.3s;
 }
 
-#localize i {
+.search .input-group #localize i {
     color: black;
 }
 
-#button-search {
+.search .input-group input {
+    height: 50px;
+    width: 55.06329113924051%
+}
+
+.search .input-group #button-search {
     background-color: #0065FC;
     border-radius: 0 10px 10px 0;
     border: none;
@@ -159,11 +175,11 @@ header #logo img {
     transition: 0.3s;
 }
 
-#button-search .fa {
+.search .input-group #button-search .fa {
     color: #FFFFFF;
 }
 
-#button-search i {
+.search .input-group #button-search i {
     color: #FFFFFF;
 }
 
@@ -285,11 +301,16 @@ header #logo img {
     justify-content: space-between;
 }
 
+.hosting-figures .figure {
+    margin-bottom: 0.5em;
+}
+
 .hosting-figures .figure .figure-image {
     display: flex;
     justify-content: center;
+    align-content: center;
     flex-direction: column;
-    overflow: visible;
+    overflow: hidden;
     width: 100%;
     height: 100px;
     background-color: #F2F2F2;
@@ -298,14 +319,10 @@ header #logo img {
     border: 5px solid #FFFFFF;
 }
 
-.hosting-figures .figure {
-    margin-bottom: 0.5em;
-}
-
 .hosting-figures .figure img {
+    display: block;
     width: 130%;
     position: relative;
-    display: block;
     margin-bottom: auto;
     margin-top: auto;
 }
