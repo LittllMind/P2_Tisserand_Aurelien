@@ -333,7 +333,8 @@ header #logo img {
 
 .hosting-figures .figure img {
     display: block;
-    width: 130%;
+    align-self: center;
+    width: 150%;
     position: relative;
     margin-bottom: auto;
     margin-top: auto;
@@ -385,6 +386,7 @@ header #logo img {
 }
 
 #popular-figures .figure img {
+    align-self: center;
     max-width: 70%;
     background-color: #F2F2F2;
     border-radius: 20px 0 0 20px;
@@ -431,10 +433,11 @@ header #logo img {
 #activities {
     border: dashed thin aliceblue;
     background-color: purple;
+    padding-bottom: 10%;
+    padding-top: 5%;
 }
 
 .activitie {
-    margin: 0 auto;
     background-color: aliceblue;
     height: 475px;
 }
@@ -444,31 +447,68 @@ header #logo img {
 }
 
 #activitie-figures {
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: stretch;
     background-color: #1818;
-    flex-grow: 1;
 }
 
 #activitie-figures .hight {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     border: 3px dashed black;
 }
 
-#activities-figures .hight .figure {}
+#activitie-figures .hight .figure {}
+
+#activitie-figures .hight .figure .figure-image {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #F2F2F2;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 0 1px #E5E5E5;
+    border: 2px solid #FFFFFF;
+}
+
+#activitie-figures .hight .figure .figure-image img {
+    align-self: center;
+    display: block;
+    width: 260%;
+    position: relative;
+}
 
 #activitie-figures .small {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     border: 3px dashed blue;
 }
 
-#activitie-figures .figure {
-    margin-bottom: 0.5em;
+#activitie-figures .small .figure {}
+
+#activitie-figures .small .figure .figure-image {
+    display: flex;
+    align-content: stretch;
+    flex-grow: initial;
+    overflow: hidden;
+    background-color: #F2F2F2;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 0 1px #E5E5E5;
+    border: 2px solid #FFFFFF;
 }
 
-#activitie-figures .figure img {
-    max-width: 20%;
-    border-radius: 20px 20px 0 0;
-    box-shadow: 0 0 3px #E5E5E5;
+#activitie-figures .small .figure .figure-image img {
+    width: 200%;
+    align-self: center;
+    display: block;
+    position: relative;
 }
 
 #activitie-figures .figure .container {
