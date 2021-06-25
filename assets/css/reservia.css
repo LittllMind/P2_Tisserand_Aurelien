@@ -24,7 +24,6 @@ nav {
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    border: thin dashed #1818;
 }
 
 nav #navigation {
@@ -39,12 +38,11 @@ nav #navigation a {
     flex: inherit;
     align-items: center;
     width: 50%;
-    border-top: 3.5px solid black;
+    border-top: 3.5px solid #F2F2F2;
     background-color: inherit;
     text-align: center;
     text-decoration: none;
     color: #4F5255;
-    border: thin dashed #1818;
 }
 
 nav #registration {
@@ -103,7 +101,6 @@ header {
     display: flex;
     margin-left: 1%;
     justify-content: space-between;
-    border: thin dashed #1818;
 }
 
 header #logo {
@@ -150,7 +147,7 @@ header #logo img {
 .search .input-group #localize {
     width: 100%;
     background-color: #F2F2F2;
-    border-radius: 10px 0 0 10px;
+    border-radius: 20px 0 0 20px;
     border: none;
     outline: none;
     cursor: grab;
@@ -168,11 +165,20 @@ header #logo img {
 
 .search .input-group #button-search {
     background-color: #0065FC;
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 20px 20px 0;
     border: none;
     outline: none;
     cursor: grab;
     transition: 0.3s;
+}
+
+.button-search {
+    width: 31.6455%;
+}
+
+.button-search span {
+    display: flex;
+    justify-content: center;
 }
 
 .search .input-group #button-search .fa {
@@ -284,9 +290,15 @@ header #logo img {
     height: 100%;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 992px) {
     .hosting {
         background-color: #1818;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hosting {
+        background-color: #898918;
     }
 }
 
@@ -417,51 +429,44 @@ header #logo img {
 /* -------------------------------- A C T I V I T I E S               */
 
 #activities {
-    /*594 / 640 */
-    /* 596 / 640 */
     border: dashed thin aliceblue;
-    float: left;
+    background-color: purple;
 }
 
 .activitie {
-    /* 390 / 594 */
-    float: left;
-    padding: 3% 0% 0% 0%;
     margin: 0 auto;
+    background-color: aliceblue;
+    height: 475px;
 }
 
 .activitie h1 {
-    font: bold 1em 'raleway', Calibri, Optima, Arial, sans-serif;
+    font: bold 1.7em 'raleway', Calibri, Optima, Arial, sans-serif;
 }
 
 #activitie-figures {
-    align-items: center;
     display: flex;
     justify-content: space-between;
+    align-items: stretch;
+    background-color: #1818;
+    flex-grow: 1;
 }
 
-#activities-figures .hight {
-    height: 100%;
+#activitie-figures .hight {
+    border: 3px dashed black;
 }
 
-#activities-figures .hight .figure {
-    height: 100%;
-}
+#activities-figures .hight .figure {}
 
 #activitie-figures .small {
-    height: 100%;
+    border: 3px dashed blue;
 }
 
 #activitie-figures .figure {
-    float: left;
     margin-bottom: 0.5em;
-    width: 90.5%;
-    /* 344 / 900 */
 }
 
 #activitie-figures .figure img {
-    max-width: 100%;
-    background-color: #F2F2F2;
+    max-width: 20%;
     border-radius: 20px 20px 0 0;
     box-shadow: 0 0 3px #E5E5E5;
 }
