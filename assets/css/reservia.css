@@ -1,4 +1,12 @@
 @font-face {
+    font-family: 'ralewaybold';
+    src: url('../font/raleway-bold/raleway-bold_allfont.net-webfont.eot');
+    src: url('../font/raleway-bold/raleway-bold_allfont.net-webfont.eot?#iefix') format('embedded-opentype'), url('../font/raleway-bold/raleway-bold_allfont.net-webfont.woff2') format('woff2'), url('../font/raleway-bold/raleway-bold_allfont.net-webfont.woff') format('woff'), url('../font/raleway-bold/raleway-bold_allfont.net-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'raleway';
     src: url('../font/raleway/raleway-variablefont_wght-webfont.eot');
     src: url('../font/raleway/raleway-variablefont_wght-webfont.eot?#iefix') format('embedded-opentype'), url('../font/raleway/raleway-variablefont_wght-webfont.woff2') format('woff2'), url('../font/raleway/raleway-variablefont_wght-webfont.woff') format('woff'), url('../font/raleway/raleway-variablefont_wght-webfont.ttf') format('truetype'), url('../font/raleway/raleway-variablefont_wght-webfont.svg#ralewaythin') format('svg');
@@ -123,15 +131,15 @@ header #logo img {
 }
 
 .search-indication h1 {
-    font: bold 1.3em 'raleway', Calibri, Optima, Arial, sans-serif;
+    font: bold 1.3em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
 }
 
 .search-indication h2 {
-    font: 1em 'raleway', Calibri, Optima, Arial, sans-serif;
+    font: 1em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
 }
 
 .search .input-group {
-    height: 50px;
+    height: 45px;
     width: 390px;
 }
 
@@ -159,7 +167,7 @@ header #logo img {
 }
 
 .search .input-group input {
-    height: 50px;
+    height: 45px;
     width: 55.06329113924051%
 }
 
@@ -192,47 +200,61 @@ header #logo img {
 
 /* -------------------------------- F I L T R E S               */
 
+#filtres {}
+
 .filtres {
     margin: 1%;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
 }
 
-.filtres h3 {
-    font: bold 0.9em 'raleway', Calibri, Optima, Arial, sans-serif;
+.filtres h1 {
+    font: bold 1.3em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
     padding-left: 0;
     margin-left: 0;
-    margin-right: 2%
+    margin-right: 0%;
 }
 
-.filtre {
+.element {
+    width: auto;
+    float: left;
+}
+
+.filtres ul {
     display: flex;
-    align-items: center;
+    list-style-type: none;
+    align-content: center;
+}
+
+.filtres ul li .filtre {
+    margin-right: 50px;
+}
+
+.filtres ul li i {
+    background-color: #DEEBFF;
+    border: 10px solid #DEEBFF;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding-top: 6px;
+    padding-left: 6px;
+    z-index: 1;
+    color: #0065FC;
+    position: absolute;
+}
+
+.filtres ul li b {
+    display: flex;
     border: 3px solid #F2F2F2;
     border-radius: 30px 30px 30px 30px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-right: 15px;
-    position: relative;
-    margin-right: 1%;
-    width: 220px;
-}
-
-.filtre i {
-    background-color: #DEEBFF;
-    border: 1px solid #DEEBFF;
-    border-radius: 50%;
-    padding: 7%;
-    position: static;
-    z-index: 1;
-    position: absolute;
-    color: #0065FC;
-}
-
-.filtre b {
-    position: absolute;
-    margin-left: 30%;
-    width: 220px;
+    font: 100% 'ralewaybold', Calibri, Optima, Arial, sans-serif;
+    height: 50px;
+    margin-left: 8px;
+    margin-right: 10px;
+    padding-right: 10px;
+    padding-left: 50px;
+    align-items: center;
 }
 
 
@@ -267,7 +289,7 @@ header #logo img {
 }
 
 .info .detail p {
-    font: 0.8em 'raleway', Calibri, Optima, Arial, sans-serif;
+    font: 0.8em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
     margin-left: 1.7%;
     width: 50%;
 }
@@ -283,7 +305,6 @@ header #logo img {
 .hosting {
     /* 390 / 594 */
     background-color: #F2F2F2;
-    background-color: #1818;
     border-radius: 20px;
     padding: 2% 2% 2% 2%;
     margin: 0 auto;
@@ -304,14 +325,15 @@ header #logo img {
         background-color: #898918;
     }
 }
+*/
 
 .hosting h1 {
     padding-left: 2.34042553191489%;
-    font: bold 1.7em 'raleway', Calibri, Optima, Arial, sans-serif;
+    font: bold 1.7em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
 }
-*/
 
 .hosting-figures {
+    height: 40%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -338,10 +360,8 @@ header #logo img {
 .hosting-figures .figure img {
     display: block;
     align-self: center;
-    width: 150%;
+    width: 100%;
     position: relative;
-    margin-bottom: auto;
-    margin-top: auto;
 }
 
 .hosting-figures .figure .container {
@@ -351,11 +371,15 @@ header #logo img {
     background-color: #FFFFFF;
     border-radius: 0 0 20px 20px;
     box-shadow: 0 0 2px #E5E5E5;
-    font: bold 0.7em 'raleway', Calibri, Optima, Arial, sans-serif;
+}
+
+.hosting-figures .container b {
+    font: bold 1em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
 }
 
 .hosting-figures .container p {
     padding-top: 5%;
+    font: bold 0.9em 'raleway', Calibri, Optima, Arial, sans-serif;
 }
 
 .hosting-figures .figure .container .fa-star {
@@ -377,39 +401,64 @@ header #logo img {
     background-color: #F2F2F2;
     border-radius: 30px;
     float: right;
+    height: 674px;
 }
 
 .popular h1 {
-    padding-left: 9.46601941747573%;
-    font: bold 1.7em 'raleway', Calibri, Optima, Arial, sans-serif;
+    padding-left: 6%;
+    font: bold 1.7em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
+}
+
+#popular-figures {
+    height: 90%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 3%;
+    display: flex;
+    align-content: space-around;
+    flex-wrap: wrap;
 }
 
 #popular-figures .figure {
-    width: 100%;
-    margin-bottom: 0.5em;
+    display: flex;
+    height: 150px
 }
 
-#popular-figures .figure img {
-    align-self: center;
-    max-width: 70%;
-    background-color: #F2F2F2;
+#popular-figures .figure .figure-image {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    width: 39%;
     border-radius: 20px 0 0 20px;
     box-shadow: 0 0 3px #E5E5E5;
     border: 5px solid #FFFFFF;
 }
 
+#popular-figures .figure img {
+    display: block;
+    align-self: center;
+    width: 210%;
+    position: relative;
+}
+
 #popular-figures .figure .container {
-    padding-top: 3%;
-    width: 300%;
     text-align: left;
+    padding-top: 4%;
+    width: 61%;
     background-color: #FFFFFF;
     border-radius: 0 20px 20px 0;
     box-shadow: 0 0 2px #E5E5E5;
-    font: bold 0.7em 'raleway', Calibri, Optima, Arial, sans-serif;
+}
+
+#popular-figures .container b {
+    font: 1em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
 }
 
 #popular-figures .container p {
     padding-top: 5%;
+    font: 1em 'raleway', Calibri, Optima, Arial, sans-serif;
 }
 
 #popular-figures .figure .container .fa-star {
@@ -418,17 +467,6 @@ header #logo img {
 
 #popular-figures .figure .container .checked {
     color: #0065FC;
-}
-
-#popular-figures {
-    padding-left: 7%;
-    padding-right: 7%;
-    display: flex;
-    flex-direction: column;
-}
-
-#popular-figures .figure {
-    display: flex;
 }
 
 
@@ -444,7 +482,7 @@ header #logo img {
 }
 
 .activitie h1 {
-    font: bold 1.7em 'raleway', Calibri, Optima, Arial, sans-serif;
+    font: bold 1.7em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
 }
 
 #activitie-figures {
@@ -526,7 +564,7 @@ header #logo img {
     background-color: #FFFFFF;
     border-radius: 0 0 20px 20px;
     box-shadow: 0 0 2px #E5E5E5;
-    font: bold 0.7em 'raleway', Calibri, Optima, Arial, sans-serif;
+    font: bold 0.7em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
 }
 
 #activitie-figures .figure .container p {
@@ -543,7 +581,7 @@ footer {
 }
 
 footer h1 {
-    font: bold 0.8em 'raleway', Calibri, Optima, Arial, sans-serif;
+    font: bold 0.8em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
     margin-left: 20%;
     margin-top: 10%;
 }
@@ -573,7 +611,7 @@ footer ul {
 }
 
 footer ul li {
-    font: 0.7em 'raleway', Calibri, Optima, Arial, sans-serif;
+    font: 0.7em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
     margin-top: 10%;
     margin-bottom: 2%;
 }
