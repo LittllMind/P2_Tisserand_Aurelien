@@ -43,14 +43,24 @@ nav #navigation {
 }
 
 nav #navigation a {
-    flex: inherit;
-    align-items: center;
+    padding-top: 3.8em;
     width: 50%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
     border-top: 3.5px solid #F2F2F2;
-    background-color: inherit;
     text-align: center;
     text-decoration: none;
     color: #4F5255;
+    font: 0.9em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
+}
+
+nav #navigation a:hover {
+    border-top: 3.5px solid #0065FC;
+}
+
+nav #navigation a.selected {
+    border-top: 3.5px solid #0065FC;
 }
 
 nav #registration {
@@ -60,13 +70,16 @@ nav #registration {
     justify-content: flex-end;
 }
 
-nav #registration button {
+nav #registration a {
+    padding-top: 3.3em;
     color: #4F94FC;
     background-color: inherit;
     border: none;
     outline: none;
-    cursor: grab;
+    cursor: default;
     transition: 0.3s;
+    position: relative;
+    z-index: 1;
 }
 
 @media screen and (max-width: 768px) {
@@ -88,6 +101,7 @@ nav #registration button {
         top: 13%;
         margin-left: 0;
         float: none;
+        z-index: 2;
     }
     nav #navigation a {
         border-top: none;
@@ -260,17 +274,12 @@ header #logo img {
 
 /* -------------------------------- I N F O                    */
 
-.info {
-    align-items: center;
-    align-items: center;
-}
+.info {}
 
 .info .detail {
     flex-direction: row;
     display: flex;
-    /* alig-items ??*/
     align-items: center;
-    justify-content: flex-start;
 }
 
 .info .detail i {
@@ -281,15 +290,15 @@ header #logo img {
 
 .info .detail .fa {
     color: #0065FC;
-    width: 1.6em;
+    width: 30px;
     border: thin solid #F2F2F2;
     border-radius: 50%;
     padding: 0.5%;
-    position: static;
 }
 
-.info .detail p {
-    font: 0.8em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
+.info .detail span {
+    align-self: center;
+    font: 1em 'raleway', Calibri, Optima, Arial, sans-serif;
     margin-left: 1.7%;
     width: 50%;
 }
@@ -328,7 +337,8 @@ header #logo img {
 */
 
 .hosting h1 {
-    padding-left: 2.34042553191489%;
+    padding-left: 2.3404%;
+    padding-bottom: 2%;
     font: bold 1.7em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
 }
 
@@ -390,14 +400,25 @@ header #logo img {
     color: #0065FC;
 }
 
+.hosting a {
+    text-decoration: none;
+    color: #212529;
+}
+
+.hosting a h1 {
+    padding-top: 2%;
+    padding-left: 2.34042553191489%;
+    font: bold 1.2em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
+}
+
 
 /* -------------------------------- P O P U L A R                */
 
 .popular {
     /* 185 / 594 */
-    width: 31.14478114478114%;
+    width: 31.1447%;
     border: dashed thin aliceblue;
-    padding-top: 3%;
+    padding-top: 1.5%;
     background-color: #F2F2F2;
     border-radius: 30px;
     float: right;
@@ -413,7 +434,6 @@ header #logo img {
     height: 90%;
     padding-left: 2%;
     padding-right: 2%;
-    padding-top: 3%;
     display: flex;
     align-content: space-around;
     flex-wrap: wrap;
