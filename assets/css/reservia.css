@@ -47,6 +47,7 @@ nav #navigation a {
     width: 50%;
     height: 100%;
     position: relative;
+    transition: 0.3s;
     z-index: 2;
     border-top: 3.5px solid #F2F2F2;
     text-align: center;
@@ -65,7 +66,6 @@ nav #navigation a.selected {
 }
 
 nav #registration {
-    float: right;
     padding-right: 3.5em;
     display: flex;
     justify-content: flex-end;
@@ -172,7 +172,7 @@ header #logo img {
 
 .search .input-group {
     margin-top: 1.8em;
-    height: 50px;
+    height: 45px;
     width: 420px;
 }
 
@@ -200,7 +200,7 @@ header #logo img {
 }
 
 .search .input-group input {
-    height: 50px;
+    height: 45px;
     width: 55.06329%;
     border: 2px
 }
@@ -224,7 +224,7 @@ header #logo img {
     }
     .search .input-group {
         margin-bottom: 2em;
-        height: 50px;
+        height: 45px;
         width: 420px;
     }
 }
@@ -290,6 +290,7 @@ header #logo img {
 }
 
 .filtres ul li i:hover {
+    transition: 0.5s;
     background-color: #0065FC;
     color: #DEEBFF;
     border: 10px solid #0065FC;
@@ -449,6 +450,7 @@ header #logo img {
     border-radius: 20px 20px 0 0;
     box-shadow: 0 0 3px #E5E5E5;
     border: 5px solid #FFFFFF;
+    box-shadow: 0.6em 0 .8em rgba(168, 164, 141, 0.2);
 }
 
 .hosting-figures .figure img {
@@ -464,7 +466,7 @@ header #logo img {
     width: 100%;
     background-color: #FFFFFF;
     border-radius: 0 0 20px 20px;
-    box-shadow: 0 0 2px #E5E5E5;
+    box-shadow: 0.1em 0 .7em rgba(168, 164, 141, 0.2);
 }
 
 .hosting-figures .container b {
@@ -524,8 +526,10 @@ header #logo img {
 }
 
 #popular-figures .figure {
+    width: auto;
     display: flex;
-    height: 150px
+    height: 150px;
+    border-radius: 20px 20px 20px 20px;
 }
 
 #popular-figures .figure .figure-image {
@@ -538,6 +542,7 @@ header #logo img {
     border-radius: 20px 0 0 20px;
     box-shadow: 0 0 3px #E5E5E5;
     border: 5px solid #FFFFFF;
+    box-shadow: 0.6em 0 .8em rgba(168, 164, 141, 0.2);
 }
 
 @media screen and (max-width: 520px) {
@@ -573,7 +578,7 @@ header #logo img {
     width: 61%;
     background-color: #FFFFFF;
     border-radius: 0 20px 20px 0;
-    box-shadow: 0 0 2px #E5E5E5;
+    box-shadow: 0.5em 0 .7em rgba(168, 164, 141, 0.2);
 }
 
 #popular-figures .container b {
@@ -683,6 +688,7 @@ header #logo img {
     background-color: #F2F2F2;
     border-radius: 20px 20px 0 0;
     box-shadow: 0 0 1px #E5E5E5;
+    box-shadow: 0.6em 0 .8em rgba(168, 164, 141, 0.2);
 }
 
 #activitie-figures .small .figure .figure-image img {
@@ -699,6 +705,7 @@ header #logo img {
     border-radius: 0 0 20px 20px;
     box-shadow: 0 0 2px #E5E5E5;
     font: bold 1em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
+    box-shadow: 0.6em 0 .8em rgba(168, 164, 141, 0.2);
 }
 
 #activitie-figures .figure .container p {
