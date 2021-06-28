@@ -434,6 +434,10 @@ header #logo img {
     }
 }
 
+.hosting-figures a {
+    width: auto;
+}
+
 .hosting-figures .figure {
     margin-bottom: 0.5em;
 }
@@ -609,6 +613,11 @@ header #logo img {
     color: #0065FC;
 }
 
+.popular a {
+    text-decoration: none;
+    color: #212529;
+}
+
 
 /* -------------------------------- A C T I V I T I E S               */
 
@@ -722,6 +731,11 @@ header #logo img {
 #activitie-figures .figure .container p {
     align-self: center;
     padding-top: 5%;
+}
+
+.activitie a {
+    text-decoration: none;
+    color: #212529;
 }
 
 
