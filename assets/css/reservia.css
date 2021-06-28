@@ -511,9 +511,20 @@ header #logo img {
     left: 1em;
 }
 
-.popular h1 {
+.popular .title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular .title h1 {
     padding-left: 6%;
     font: bold 1.7em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
+}
+
+.popular .title i {
+    float: right;
+    align-self: center;
+    padding-right: 3%;
 }
 
 #popular-figures {
