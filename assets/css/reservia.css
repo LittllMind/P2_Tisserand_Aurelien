@@ -26,7 +26,7 @@
 /* -------------------------------- N A V                  */
 
 nav {
-    position: static;
+    position: absolute;
     top: 0;
     height: 8em;
     width: 100%;
@@ -57,6 +57,7 @@ nav #navigation a {
 
 nav #navigation a:hover {
     border-top: 3.5px solid #0065FC;
+    color: #4F94FC;
 }
 
 nav #navigation a.selected {
@@ -65,13 +66,14 @@ nav #navigation a.selected {
 
 nav #registration {
     float: right;
-    padding-right: 3.5%;
+    padding-right: 3.5em;
     display: flex;
     justify-content: flex-end;
+    position: relative;
 }
 
 nav #registration a {
-    padding-top: 3.3em;
+    top: 4em;
     color: #4F94FC;
     background-color: inherit;
     border: none;
@@ -80,6 +82,7 @@ nav #registration a {
     transition: 0.3s;
     position: relative;
     z-index: 1;
+    font: 0.9em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
 }
 
 @media screen and (max-width: 768px) {
@@ -92,9 +95,11 @@ nav #registration a {
     nav {
         padding-top: 12%;
         padding-bottom: 27%;
+        align-items: center;
     }
     nav #navigation {
-        width: 93%;
+        padding-top: 10%;
+        width: 100%;
         display: flex;
         justify-content: space-between;
         position: absolute;
@@ -107,6 +112,17 @@ nav #registration a {
         border-top: none;
         border-bottom: 3.5px solid #F2F2F2;
         padding-bottom: 5%
+    }
+    nav #navigation a:hover {
+        border-top: 3.5px solid #0065FC;
+        color: #4F94FC;
+    }
+    nav #registration {
+        align-self: flex-end;
+        z-index: 3;
+    }
+    nav #registration a {
+        top: 1.9em;
     }
 }
 
@@ -137,6 +153,7 @@ header #logo img {
 /* -------------------------------- S E A R C H               */
 
 .search {
+    padding-top: 8em;
     padding-left: 1%;
     margin-bottom: 3%;
     display: flex;
@@ -146,15 +163,26 @@ header #logo img {
 
 .search-indication h1 {
     font: bold 1.3em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
+    width: 80%;
+}
+
+@media screen and (max-width: 520px) {
+    .search {
+        padding-top: 12em;
+    }
+    .search-indication h1 {
+        width: 80%;
+    }
 }
 
 .search-indication h2 {
-    font: 1em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
+    font: 1em 'raleway', Calibri, Optima, Arial, sans-serif;
 }
 
 .search .input-group {
-    height: 45px;
-    width: 390px;
+    margin-top: 1.8em;
+    height: 50px;
+    width: 420px;
 }
 
 .localise {
@@ -181,7 +209,7 @@ header #logo img {
 }
 
 .search .input-group input {
-    height: 45px;
+    height: 50px;
     width: 55.06329113924051%
 }
 
