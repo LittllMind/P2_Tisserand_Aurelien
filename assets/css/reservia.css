@@ -24,7 +24,7 @@
 
 @media screen and (max-width: 520px) {
     #page {
-        width: 441px;
+        width: auto;
         margin-left: 3.5%;
         margin-right: 3.5%;
     }
@@ -455,23 +455,24 @@ header #logo img {
         display: flex;
         flex-direction: column-reverse;
         position: relative;
-        height: 100%;
+        height: auto;
     }
     .hosting {
         background-color: inherit;
         border-radius: 0px;
+        width: 90%;
         height: 100%;
     }
     .hosting h1 {
         padding-top: 1.5em;
-        padding-left: 1.5em;
+        padding-left: 1em;
         font: bold 1.3em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
     }
     .hosting-figures {
         flex-wrap: wrap;
     }
     .hosting-figures .figure {
-        max-width: 85%;
+        max-width: 82%;
     }
 }
 
@@ -598,6 +599,7 @@ header #logo img {
         font: bold 0.9em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
     }
     #popular-figures .figure {
+        width: 85%;
         margin-top: 0.5em;
         margin-bottom: 0.5em;
     }
@@ -662,10 +664,10 @@ header #logo img {
     height: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
 }
 
 #activitie-figures .hight {
+    width: 23%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -690,32 +692,8 @@ header #logo img {
     box-shadow: 0 0 1px #E5E5E5;
 }
 
-@media screen and (max-width: 520px) {
-    .activitie {
-        display: flex;
-        flex-direction: column;
-        height: auto;
-    }
-    .activitie h1 {
-        padding-top: 2em;
-        font: bold 1.4em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
-    }
-    .activitie #activitie-figures {
-        flex-direction: column;
-    }
-    #activitie-figures .hight .figure {
-        height: 152px;
-    }
-}
-
-#activitie-figures .hight .figure .figure-image img {
-    max-width: 280%;
-    align-self: center;
-    display: block;
-    position: relative;
-}
-
 #activitie-figures .small {
+    width: 23%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -739,6 +717,13 @@ header #logo img {
     box-shadow: 0.6em 0 .8em rgba(168, 164, 141, 0.2);
 }
 
+#activitie-figures .hight .figure .figure-image img {
+    max-width: 280%;
+    align-self: center;
+    display: block;
+    position: relative;
+}
+
 #activitie-figures .small .figure .figure-image img {
     width: 200%;
     align-self: center;
@@ -752,18 +737,54 @@ header #logo img {
     background-color: #FFFFFF;
     border-radius: 0 0 20px 20px;
     box-shadow: 0 0 2px #E5E5E5;
-    font: bold 1em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
     box-shadow: 0.6em 0 .8em rgba(168, 164, 141, 0.2);
 }
 
-#activitie-figures .figure .container p {
+#activitie-figures .figure .container b {
     align-self: center;
     padding-top: 5%;
+    font: bold 1em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
 }
 
 .activitie a {
     text-decoration: none;
     color: #212529;
+}
+
+@media screen and (max-width: 520px) {
+    .activitie {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: auto;
+    }
+    .activitie h1 {
+        padding-top: 2em;
+        padding-bottom: 2em;
+        font: bold 1.4em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
+    }
+    .activitie #activitie-figures {
+        flex-direction: column;
+    }
+    #activitie-figures .hight {
+        width: 85%;
+        height: 226px;
+    }
+    #activitie-figures .small {
+        width: 85%;
+        height: auto;
+    }
+    #activitie-figures .figure {
+        height: 226px;
+        max-width: 100%;
+        margin-bottom: 3%;
+    }
+    #activitie-figures .hight .figure .container b {
+        font: bold 1em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
+    }
+    #activitie-figures .small .container b {
+        font: bold 1.2em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
+    }
 }
 
 
@@ -802,6 +823,7 @@ footer ul li {
     }
     .list {
         width: 100%;
+        padding-left: 6%;
     }
     footer ul li {}
 }
