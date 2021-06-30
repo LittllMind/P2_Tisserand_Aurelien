@@ -409,7 +409,6 @@ header #logo img {
     border-radius: 20px;
     padding: 2% 0% 2% 0%;
     right: 1em;
-    margin: 0 auto;
     float: left;
     min-width: 65%;
     margin-right: 2%;
@@ -470,51 +469,6 @@ header #logo img {
     align-items: center;
 }
 
-@media screen and (max-width: 1251px) {
-    #hostings {
-        float: left;
-        flex-direction: column;
-        height: auto;
-    }
-}
-
-@media screen and (max-width: 768) {
-    .popular {
-        float: left;
-        background-color: #1818;
-    }
-}
-
-@media screen and (max-width: 520px) {
-    #hostings {
-        width: 100%;
-        flex-direction: column-reverse;
-        align-items: center;
-        position: relative;
-        height: auto;
-    }
-    .hosting {
-        justify-content: center;
-        background-color: inherit;
-        border-radius: 0px;
-        align-items: center;
-        padding-left: 2%;
-        width: 118%;
-        height: 100%;
-    }
-    .hosting h1 {
-        padding-top: 1.5em;
-        padding-left: 1em;
-        font: bold 1.3em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
-    }
-    .hosting-figures {
-        flex-wrap: wrap;
-    }
-    .hosting-figures .figure {
-        max-width: 82%;
-    }
-}
-
 .hosting-figures .figure img {
     display: block;
     align-self: center;
@@ -555,8 +509,58 @@ header #logo img {
 
 .hosting a h1 {
     padding-top: 2%;
-    padding-left: 2.34042553191489%;
+    padding-left: 2.3404%;
     font: bold 1.2em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
+}
+
+@media screen and (max-width: 1251px) {
+    #hostings {
+        float: left;
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 768) {
+    .popular {
+        float: left;
+        background-color: #1818;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    #hostings {
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+        position: relative;
+        height: auto;
+    }
+    .hosting {
+        justify-content: left;
+        background-color: inherit;
+        border-radius: 0px;
+        align-items: left;
+        padding-left: 2%;
+        width: 118%;
+        height: 100%;
+    }
+    .hosting h1 {
+        padding-top: 1.5em;
+        padding-left: 1em;
+        font: bold 1.3em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
+    }
+    .hosting-figures {
+        align-self: left;
+        flex-wrap: wrap;
+    }
+    .hosting-figures .figure {
+        max-width: 82%;
+    }
+    .hosting a h1 {
+        padding-left: 5%;
+        font: bold 1.2em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
+    }
 }
 
 
@@ -659,7 +663,7 @@ header #logo img {
     color: #212529;
 }
 
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1260px) and (min-width: 696px) {
     .popular {
         margin-top: 2%;
         /* 185 / 594 */
@@ -720,6 +724,7 @@ header #logo img {
 @media screen and (max-width: 520px) {
     .popular {
         width: auto;
+        justify-content: center;
         margin-right: 40px;
         z-index: 3;
         height: 100%;
@@ -732,12 +737,14 @@ header #logo img {
         margin-left: 6%;
         font: bold 0.9em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
     }
+    #popular-figures {
+        padding-left: 7%;
+    }
     #popular-figures .figure {
         width: 85%;
         margin-top: 0.5em;
         margin-bottom: 0.5em;
     }
-    #popular-figures .figure .figure_image {}
 }
 
 
