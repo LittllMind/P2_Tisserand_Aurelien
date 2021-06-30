@@ -64,6 +64,8 @@ nav #navigation a {
     font: 0.9em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
 }
 
+@media screen and (max-width: 1200px) {}
+
 nav #navigation a:hover {
     border-top: 3.5px solid #0065FC;
     color: #4F94FC;
@@ -420,6 +422,7 @@ header #logo img {
 
 .hosting-figures {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     justify-content: stretch;
 }
@@ -449,18 +452,36 @@ header #logo img {
     align-items: center;
 }
 
+@media screen and (max-width: 1251px) {
+    #hostings {
+        float: left;
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 768) {
+    .popular {
+        float: left;
+        background-color: #1818;
+    }
+}
+
 @media screen and (max-width: 520px) {
     #hostings {
         width: 100%;
-        display: flex;
         flex-direction: column-reverse;
+        align-items: center;
         position: relative;
         height: auto;
     }
     .hosting {
+        justify-content: center;
         background-color: inherit;
         border-radius: 0px;
-        width: 90%;
+        align-items: center;
+        padding-left: 2%;
+        width: 118%;
         height: 100%;
     }
     .hosting h1 {
@@ -581,6 +602,27 @@ header #logo img {
     box-shadow: 0 0 3px #E5E5E5;
     border: 5px solid #FFFFFF;
     box-shadow: 0.6em 0 .8em rgba(168, 164, 141, 0.2);
+}
+
+@media screen and (max-width: 1120px) {
+    .popular {
+        float: left;
+        flex-direction: column;
+        height: auto;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 768) {
+    .popular {
+        float: left;
+        background-color: #1818;
+        width: 100%;
+        float: left;
+    }
+    #popular-figures {
+        flex-direction: row;
+    }
 }
 
 @media screen and (max-width: 520px) {
@@ -751,6 +793,8 @@ header #logo img {
     color: #212529;
 }
 
+@media screen and (max-width: 768) {}
+
 @media screen and (max-width: 520px) {
     .activitie {
         display: flex;
@@ -767,11 +811,11 @@ header #logo img {
         flex-direction: column;
     }
     #activitie-figures .hight {
-        width: 85%;
+        width: 104%;
         height: 226px;
     }
     #activitie-figures .small {
-        width: 85%;
+        width: 104%;
         height: auto;
     }
     #activitie-figures .figure {
