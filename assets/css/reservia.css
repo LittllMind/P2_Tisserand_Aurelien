@@ -442,6 +442,7 @@ header #logo img {
     flex-wrap: wrap;
     width: 100%;
     justify-content: stretch;
+    justify-content: center;
 }
 
 .hosting-figures a {}
@@ -565,9 +566,9 @@ header #logo img {
     /* 185 / 594 */
     display: flex;
     flex-direction: column;
-    padding-top: 1.5%;
+    padding-top: 3%;
     background-color: #F2F2F2;
-    border-radius: 30px;
+    border-radius: 20px;
     float: right;
     height: 674px;
     left: 1em;
@@ -621,12 +622,86 @@ header #logo img {
     box-shadow: 0.6em 0 .8em rgba(168, 164, 141, 0.2);
 }
 
+#popular-figures .figure img {
+    display: block;
+    align-self: center;
+    width: 210%;
+    position: relative;
+}
+
+#popular-figures .figure .container {
+    text-align: left;
+    padding-top: 4%;
+    width: 61%;
+    background-color: #FFFFFF;
+    border-radius: 0 20px 20px 0;
+    box-shadow: 0.5em 0 .7em rgba(168, 164, 141, 0.2);
+}
+
+#popular-figures .container b {
+    font: 1em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
+}
+
+#popular-figures .container p {
+    font: 1em 'raleway', Calibri, Optima, Arial, sans-serif;
+}
+
+#popular-figures .figure .container .fa-star {
+    color: #F2F2F2;
+}
+
+#popular-figures .figure .container .checked {
+    color: #0065FC;
+}
+
+.popular a {
+    text-decoration: none;
+    color: #212529;
+}
+
 @media screen and (max-width: 1120px) {
     .popular {
-        float: left;
+        margin-top: 2%;
+        /* 185 / 594 */
+        display: flex;
         flex-direction: column;
+        padding-top: 0%;
+        border-radius: 20px;
         height: auto;
-        width: auto;
+        left: unset;
+        margin-left: unset;
+        width: 100%;
+    }
+    #popular-figures {
+        flex-direction: row;
+    }
+    #popular-figures .figure {
+        flex-direction: column;
+        height: 150px;
+        width: 30%;
+    }
+    #popular-figures .figure {
+        margin-bottom: 0.5em;
+        margin: 2%;
+        max-width: 28%;
+        height: 250px;
+    }
+    #popular-figures .figure .figure-image {
+        width: 100%;
+        height: 50%;
+        border-radius: 20px 20px 0 0;
+    }
+    #popular-figures .figure .container {
+        padding: 10px 20px;
+        width: 100%;
+        border-radius: 0 0 20px 20px;
+    }
+    #popular-figures .container b {
+        font: bold 1em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
+    }
+    #popular-figures .container p {
+        padding-top: 5%;
+        font: bold 0.9em 'raleway', Calibri, Optima, Arial, sans-serif;
     }
 }
 
@@ -663,44 +738,6 @@ header #logo img {
         margin-bottom: 0.5em;
     }
     #popular-figures .figure .figure_image {}
-}
-
-#popular-figures .figure img {
-    display: block;
-    align-self: center;
-    width: 210%;
-    position: relative;
-}
-
-#popular-figures .figure .container {
-    text-align: left;
-    padding-top: 4%;
-    width: 61%;
-    background-color: #FFFFFF;
-    border-radius: 0 20px 20px 0;
-    box-shadow: 0.5em 0 .7em rgba(168, 164, 141, 0.2);
-}
-
-#popular-figures .container b {
-    font: 1em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
-}
-
-#popular-figures .container p {
-    padding-top: 5%;
-    font: 1em 'raleway', Calibri, Optima, Arial, sans-serif;
-}
-
-#popular-figures .figure .container .fa-star {
-    color: #F2F2F2;
-}
-
-#popular-figures .figure .container .checked {
-    color: #0065FC;
-}
-
-.popular a {
-    text-decoration: none;
-    color: #212529;
 }
 
 
