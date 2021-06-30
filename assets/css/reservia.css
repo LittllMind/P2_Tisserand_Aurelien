@@ -64,15 +64,11 @@ nav #navigation a {
     font: 0.9em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
 }
 
-@media screen and (max-width: 1200px) {}
-
-nav #navigation a:hover {
-    border-top: 3.5px solid #0065FC;
-    color: #4F94FC;
-}
-
-nav #navigation a.selected {
-    border-top: 3.5px solid #0065FC;
+@media screen and (min-width: 520px) {
+    nav #navigation a:hover {
+        border-top: 3.5px solid #0065FC;
+        color: #4F94FC;
+    }
 }
 
 nav #registration {
@@ -225,20 +221,6 @@ header #logo img {
     transition: 0.3s;
 }
 
-@media screen and (max-width: 520px) {
-    .search {
-        padding-top: 12em;
-    }
-    .search-indication h1 {
-        width: 80%;
-    }
-    .search .input-group {
-        margin-bottom: 2em;
-        height: 45px;
-        width: 420px;
-    }
-}
-
 .button-search {
     width: 31.6455%;
 }
@@ -254,6 +236,29 @@ header #logo img {
 
 .search .input-group #button-search i {
     color: #FFFFFF;
+}
+
+@media screen and (max-width: 520px) {
+    .search {
+        padding-top: 12em;
+    }
+    .search-indication h1 {
+        width: 80%;
+    }
+    .search .input-group {
+        margin-bottom: 2em;
+        height: 45px;
+        width: 420px;
+    }
+    .input-group #button-search {
+        width: 46%;
+    }
+    .search .input-group #button-search .fa {
+        color: transparent;
+    }
+    #button-search {
+        background: url(../images/icons/magnifying-glass.png) center no-repeat;
+    }
 }
 
 
