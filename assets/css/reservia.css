@@ -132,6 +132,12 @@ nav #registration a {
     }
 }
 
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    nav #navigation {
+        width: 35%;
+    }
+}
+
 
 /* -------------------------------- H E A D E R                 */
 
@@ -322,6 +328,12 @@ header #logo img {
     padding-right: 10px;
     padding-left: 50px;
     align-items: center;
+}
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    .filtres ul li {
+        padding-bottom: 2%;
+    }
 }
 
 @media screen and (max-width: 520px) {
