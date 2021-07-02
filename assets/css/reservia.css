@@ -159,93 +159,6 @@ header #registration a {
 
 /* -------------------------------- S E A R C H               */
 
-
-/*
-
-
-.search .input-group {
-    margin-top: 1.8em;
-    height: 45px;
-    width: 420px;
-}
-
-.localise span {
-    display: flex;
-    justify-content: center;
-}
-
-.search .input-group .localize {
-    width: 100%;
-    border-radius: 16px 0 0 16px;
-    border: none;
-    outline: none;
-    cursor: grab;
-    transition: 0.3s;
-}
-
-.search .input-group .localize i {
-    color: black;
-}
-
-.search .input-group input {
-    height: 45px;
-    width: 55.06329%;
-    border: 2px
-}
-
-.search .input-group #button-search {
-    font: 1em 'raleway', Calibri, Optima, Arial, sans-serif;
-    background-color: #0065FC;
-    border-radius: 0 16px 16px 0;
-    border: none;
-    outline: none;
-    cursor: grab;
-    transition: 0.3s;
-}
-
-.button-search {
-    width: 31.6455%;
-}
-
-.button-search span {
-    display: flex;
-    justify-content: center;
-}
-
-.search .input-group #button-search .fa {
-    color: #FFFFFF;
-}
-
-.search .input-group #button-search i {
-    color: #FFFFFF;
-}
-
-@media screen and (max-width: 520px) {
-    .search {
-        padding-top: 12em;
-    }
-    .search-indication h1 {
-        width: 80%;
-    }
-    .search .input-group {
-        margin-bottom: 2em;
-        height: 45px;
-        width: 420px;
-    }
-    .input-group #button-search {
-        width: 46%;
-    }
-    .search .input-group #button-search .fa {
-        color: transparent;
-    }
-    #button-search {
-        background: url(../images/icons/magnifying-glass.png) center no-repeat;
-    }
-}
-
-
-/* -------------------------------- S E A R C H               */
-
 .search {
     padding-top: 8em;
     padding-left: 1%;
@@ -266,7 +179,7 @@ header #registration a {
 
 .group-search {
     display: flex;
-    height: 45px;
+    height: 49px;
     width: 36%;
     align-items: center;
     margin-top: 2%;
@@ -404,28 +317,46 @@ header #registration a {
     align-content: flex-start;
 }
 
+.filtres ul li {
+    display: flex;
+    align-items: center;
+}
+
 .filtres ul li .filtre {
     margin-right: 50px;
 }
 
+.filtres ul .filtre .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1818;
+}
+
 .filtres ul li i {
     background-color: #DEEBFF;
-    border: 10px solid #DEEBFF;
+    border: thin solid #DEEBFF;
+    margin: 0 auto;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    padding-top: 6px;
-    padding-left: 6px;
+    width: 38px;
+    height: 38px;
+    padding-top: 17px;
+    padding-left: 17px;
     z-index: 1;
     color: #0065FC;
     position: absolute;
 }
 
-.filtres ul li i:hover {
+.filtres i:hover {
     transition: 0.5s;
     background-color: #0065FC;
     color: #DEEBFF;
-    border: 10px solid #0065FC;
+    border: thin solid #0065FC;
+}
+
+.filtres li:hover b {
+    color: #0065FC;
+    border: thin solid #0065FC;
 }
 
 .filtres ul li b {
@@ -458,10 +389,21 @@ header #registration a {
         margin-top: 2%;
         margin-bottom: 2%;
     }
+    .filtres ul li i {
+        border: thin solid #DEEBFF;
+        border-radius: 50%;
+        width: 38px;
+        height: 38px;
+        padding-top: 17px;
+        padding-left: 17px;
+        z-index: 1;
+        color: #0065FC;
+        position: absolute;
+    }
     .filtres ul li i:hover {
         background-color: #0065FC;
         color: #DEEBFF;
-        border: 10px solid #0065FC;
+        border: thin solid #0065FC;
     }
 }
 
@@ -510,7 +452,7 @@ header #registration a {
 #hostings {
     display: flex;
     flex-direction: row;
-    height: 674px;
+    height: 730px;
     width: 100%;
 }
 
@@ -518,11 +460,11 @@ header #registration a {
     /* 390 / 594 */
     background-color: #F2F2F2;
     border-radius: 20px;
-    padding: 2% 0% 2% 0%;
-    right: 1em;
     float: left;
+    justify-content: center;
     min-width: 65%;
     margin-right: 2%;
+    height: 100%;
 }
 
 
@@ -543,16 +485,15 @@ header #registration a {
 .hosting h1 {
     padding-left: 2.3404%;
     padding-top: 2%;
-    padding-bottom: 2%;
     font: bold 1.4em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
 }
 
 .hosting-figures {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-    justify-content: stretch;
-    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-evenly;
 }
 
 .hosting-figures a {}
@@ -571,7 +512,7 @@ header #registration a {
     flex-direction: column;
     overflow: hidden;
     width: 100%;
-    height: 50%;
+    height: 45%;
     background-color: #F2F2F2;
     border-radius: 20px 20px 0 0;
     box-shadow: 0 0 3px #E5E5E5;
@@ -589,9 +530,9 @@ header #registration a {
 
 .hosting-figures .figure .container {
     text-align: left;
-    padding: 10px 20px;
     width: 100%;
     background-color: #FFFFFF;
+    border: 5px solid #FFFFFF;
     border-radius: 0 0 20px 20px;
     box-shadow: 0.1em 0 .7em rgba(168, 164, 141, 0.2);
 }
@@ -619,7 +560,6 @@ header #registration a {
 }
 
 .hosting a h1 {
-    padding-top: 2%;
     padding-left: 2.3404%;
     font: bold 1.2em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
 }
@@ -679,13 +619,14 @@ header #registration a {
 
 .popular {
     /* 185 / 594 */
+    height: 730px;
     display: flex;
     flex-direction: column;
     padding-top: 3%;
     background-color: #F2F2F2;
     border-radius: 20px;
     float: right;
-    height: 674px;
+    height: 98%;
     left: 1em;
     min-width: 20%;
     margin-left: 5%;
@@ -698,7 +639,7 @@ header #registration a {
 
 .popular .title h1 {
     padding-left: 6%;
-    padding-top: 8%;
+    padding-top: 2%;
     font: bold 1.4em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
 }
 
@@ -975,19 +916,18 @@ header #registration a {
         width: auto;
     }
     .activitie h1 {
-        padding-top: 2em;
         padding-bottom: 2em;
-        font: bold 1.4em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
+        font: bold 1.2em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
     }
     .activitie #activitie-figures {
         flex-direction: column;
     }
     #activitie-figures .hight {
-        width: 104%;
+        width: 95%;
         height: 226px;
     }
     #activitie-figures .small {
-        width: 104%;
+        width: 95%;
         height: auto;
     }
     #activitie-figures .figure {
@@ -999,7 +939,7 @@ header #registration a {
         font: bold 1em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
     }
     #activitie-figures .small .container b {
-        font: bold 1.2em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
+        font: bold 1em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
     }
 }
 
@@ -1010,6 +950,7 @@ footer {
     background-color: #F2F2F2;
     display: flex;
     justify-content: center;
+    width: 110%;
 }
 
 footer h1 {
