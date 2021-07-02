@@ -15,9 +15,7 @@
 }
 
 #page {
-    width: 93%;
-    margin-left: 3.5%;
-    margin-right: 3.5%;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -53,56 +51,12 @@ header #logo img {
     width: 100px;
 }
 
-
-/* -------------------------------- N A V                  */
-
-nav {
-    position: absolute;
-    top: 0;
-    height: 8em;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    background-color: #1818;
-}
-
-nav #navigation {
-    width: 25%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 30%;
-}
-
-nav #navigation a {
-    padding-top: 3.8em;
-    width: 50%;
-    height: 100%;
-    position: relative;
-    transition: 0.3s;
-    z-index: 2;
-    border-top: 3.5px solid #F2F2F2;
-    text-align: center;
-    text-decoration: none;
-    color: #4F5255;
-    font: 0.9em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
-}
-
-@media screen and (min-width: 520px) {
-    nav #navigation a:hover {
-        border-top: 3.5px solid #0065FC;
-        color: #4F94FC;
-    }
-}
-
-nav #registration {
+header #registration {
     padding-right: 4em;
     display: flex;
-    justify-content: center;
 }
 
-nav #registration a {
-    top: 2.1em;
+header #registration a {
     color: #4F94FC;
     background-color: inherit;
     border: none;
@@ -114,47 +68,90 @@ nav #registration a {
     font: 0.9em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
 }
 
+
+/* -------------------------------- N A V                  */
+
+.nav {
+    top: 0;
+    height: 3.6em;
+    padding-top: 0.5em;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav #navigation {
+    padding-right: 8em;
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 30%;
+}
+
+.nav #navigation a {
+    padding-top: 3.8em;
+    width: 50%;
+    height: 50%;
+    transition: 0.3s;
+    z-index: 2;
+    border-top: 3.5px solid #F2F2F2;
+    text-align: center;
+    text-decoration: none;
+    color: #4F5255;
+    font: 0.9em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
+}
+
+@media screen and (min-width: 520px) {
+    .nav #navigation a:hover {
+        border-top: 3.5px solid #0065FC;
+        color: #4F94FC;
+    }
+}
+
 @media screen and (max-width: 768px) {
-    nav #navigation {
+    .nav #navigation {
         float: left;
     }
 }
 
 @media screen and (max-width: 520px) {
-    nav {
-        align-items: center;
-        display: flex;
-        flex-direction: column-reverse;
-        padding-top: 14%;
+    .nav {
+        top: 4em;
+        left: -11em;
+        width: 145%;
+        justify-content: left;
     }
-    nav #navigation {
+    .nav #navigation {
+        float: none;
+        padding-right: 0px;
+        padding-left: 0px;
         width: 100%;
-        display: flex;
-        justify-content: space-between;
-        position: absolute;
-        float: left;
         z-index: 2;
     }
-    nav #navigation a {
+    .nav #navigation a {
+        width: 100%;
         border-top: none;
         border-bottom: 3.5px solid #F2F2F2;
         padding-bottom: 5%
     }
-    nav #navigation a:hover {
+    .nav #navigation a:hover {
         border-bottom: 3.5px solid #0065FC;
         color: #4F94FC;
     }
-    nav #registration {
+    .nav #registration {
         align-self: flex-end;
         z-index: 3;
     }
-    nav #registration a {
-        top: 0
+    .nav #registration a {
+        top: 0;
     }
 }
 
 @media screen and (max-width: 768px) and (orientation: landscape) {
-    nav #navigation {
+    .nav #navigation {
         width: 35%;
     }
 }
@@ -334,6 +331,9 @@ nav #registration a {
 }
 
 @media screen and (max-width: 520px) {
+    .search {
+        padding-top: 9em;
+    }
     .search-indication h1 {
         font: bold 1.2em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
     }
