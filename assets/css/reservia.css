@@ -372,6 +372,12 @@ header #registration a {
     align-items: center;
 }
 
+@media screen and (max-width: 1260px) and (min-width: 520px) {
+    .filtres ul li {
+        padding-bottom: 2%;
+    }
+}
+
 @media screen and (max-width: 768px) and (orientation: landscape) {
     .filtres ul li {
         padding-bottom: 2%;
@@ -454,6 +460,7 @@ header #registration a {
     flex-direction: row;
     height: 730px;
     width: 100%;
+    background-color: #1818;
 }
 
 .hosting {
@@ -564,11 +571,20 @@ header #registration a {
     font: bold 1.2em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
 }
 
-@media screen and (max-width: 1251px) {
+@media screen and (max-width: 1260px) and (min-width: 520px) {
     #hostings {
         float: left;
         flex-direction: column;
         height: auto;
+    }
+    .hosting {
+        margin-right: unset;
+    }
+    .hosting-figures .figure {
+        margin-bottom: 0.5em;
+        margin: 2%;
+        max-width: 28%;
+        height: 250px;
     }
 }
 
@@ -627,7 +643,6 @@ header #registration a {
     border-radius: 20px;
     float: right;
     height: 98%;
-    left: 1em;
     min-width: 20%;
     margin-left: 5%;
 }
@@ -724,7 +739,6 @@ header #registration a {
         padding-top: 0%;
         border-radius: 20px;
         height: auto;
-        left: unset;
         margin-left: unset;
         width: 100%;
     }
@@ -743,13 +757,13 @@ header #registration a {
         height: 250px;
     }
     #popular-figures .figure .figure-image {
-        width: 100%;
+        width: auto;
         height: 50%;
         border-radius: 20px 20px 0 0;
     }
     #popular-figures .figure .container {
         padding: 10px 20px;
-        width: 100%;
+        width: auto;
         border-radius: 0 0 20px 20px;
     }
     #popular-figures .container b {
