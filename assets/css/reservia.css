@@ -205,7 +205,6 @@ header #registration a {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #4F94FC;
 }
 
 .group-search-input input {
@@ -933,7 +932,7 @@ header #registration a {
     #activities {
         padding-bottom: 10%;
         padding-top: 5%;
-        width: 105%;
+        width: 100%;
     }
     .activitie {
         display: flex;
@@ -977,12 +976,12 @@ footer {
     background-color: #F2F2F2;
     display: flex;
     justify-content: center;
-    width: 110%;
+    width: 100%;
 }
 
 footer h1 {
     font: bold 1em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
-    width: 100%;
+    width: 10%;
     margin-top: 10%;
 }
 
@@ -1004,10 +1003,9 @@ footer ul li {
 @media screen and (max-width: 520px) {
     footer {
         flex-direction: column;
+        margin-right: 10%;
     }
     .list {
         width: 100%;
-        padding-left: 6%;
     }
-    footer ul li {}
 }
