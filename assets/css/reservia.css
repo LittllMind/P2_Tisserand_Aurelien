@@ -22,9 +22,7 @@
 
 @media screen and (max-width: 520px) {
     #page {
-        width: auto;
-        margin-left: 3.5%;
-        margin-right: 3.5%;
+        min-width: 100%;
     }
 }
 
@@ -64,7 +62,7 @@ header #registration a {
     cursor: default;
     transition: 0.3s;
     position: relative;
-    z-index: 1;
+    z-index: 3;
     font: 0.9em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
 }
 
@@ -460,7 +458,6 @@ header #registration a {
     flex-direction: row;
     height: 730px;
     width: 100%;
-    background-color: #1818;
 }
 
 .hosting {
@@ -468,6 +465,8 @@ header #registration a {
     background-color: #F2F2F2;
     border-radius: 20px;
     float: left;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     min-width: 65%;
     margin-right: 2%;
@@ -588,29 +587,36 @@ header #registration a {
     }
 }
 
-@media screen and (max-width: 768) {
-    .popular {
-        float: left;
-        background-color: #1818;
+@media screen and (min-width: 520px) and (max-width: 768) {
+    .hosting {
+        margin-right: unset;
+    }
+}
+
+@media screen and (min-width: 520) and (max-width: 680) {
+    .hosting-figures .figure {
+        max-width: 100%;
     }
 }
 
 @media screen and (max-width: 520px) {
     #hostings {
-        width: 100%;
+        height: auto;
         flex-direction: column-reverse;
         align-items: center;
         position: relative;
-        height: auto;
     }
     .hosting {
-        justify-content: left;
         background-color: inherit;
         border-radius: 0px;
-        align-items: left;
-        padding-left: 2%;
-        width: 118%;
-        height: 100%;
+        padding-left: 0px;
+        margin-right: 0px;
+        width: 103%;
+        margin-left: 3%;
+    }
+    .hosting-figures {
+        justify-content: unset;
+        max-width: 100%;
     }
     .hosting h1 {
         padding-top: 1.5em;
@@ -618,11 +624,12 @@ header #registration a {
         font: bold 1.3em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
     }
     .hosting-figures {
+        width: 100%;
         align-self: left;
         flex-wrap: wrap;
     }
     .hosting-figures .figure {
-        max-width: 82%;
+        max-width: 88%;
     }
     .hosting a h1 {
         padding-left: 5%;
@@ -644,7 +651,6 @@ header #registration a {
     float: right;
     height: 98%;
     min-width: 20%;
-    margin-left: 5%;
 }
 
 .popular .title {
@@ -730,7 +736,7 @@ header #registration a {
     color: #212529;
 }
 
-@media screen and (max-width: 1260px) and (min-width: 696px) {
+@media screen and (max-width: 1260px) and (min-width: 680px) {
     .popular {
         margin-top: 2%;
         /* 185 / 594 */
@@ -738,8 +744,6 @@ header #registration a {
         flex-direction: column;
         padding-top: 0%;
         border-radius: 20px;
-        height: auto;
-        margin-left: unset;
         width: 100%;
     }
     #popular-figures {
@@ -775,12 +779,12 @@ header #registration a {
     }
 }
 
-@media screen and (max-width: 768) {
+@media screen and (max-width: 680) and (min-width: 520) {
     .popular {
         float: left;
         background-color: #1818;
         width: 100%;
-        float: left;
+        margin-left: unset;
     }
     #popular-figures {
         flex-direction: row;
@@ -788,16 +792,19 @@ header #registration a {
 }
 
 @media screen and (max-width: 520px) {
+    .populars {
+        width: 115%;
+    }
     .popular {
-        width: auto;
+        width: 100%;
         justify-content: center;
-        margin-right: 40px;
         z-index: 3;
         height: 100%;
         left: 0;
         border-radius: 0px;
+        margin-right: 5%;
         padding-bottom: 1em;
-        width: 441px;
+        width: 100%;
     }
     .popular h1 {
         margin-left: 6%;
@@ -807,7 +814,7 @@ header #registration a {
         padding-left: 7%;
     }
     #popular-figures .figure {
-        width: 85%;
+        width: 88%;
         margin-top: 0.5em;
         margin-bottom: 0.5em;
     }
@@ -923,6 +930,11 @@ header #registration a {
 @media screen and (max-width: 768) {}
 
 @media screen and (max-width: 520px) {
+    #activities {
+        padding-bottom: 10%;
+        padding-top: 5%;
+        width: 105%;
+    }
     .activitie {
         display: flex;
         flex-direction: column;
@@ -935,18 +947,19 @@ header #registration a {
     }
     .activitie #activitie-figures {
         flex-direction: column;
+        margin-left: 3%;
     }
     #activitie-figures .hight {
-        width: 95%;
+        width: 100%;
         height: 226px;
     }
     #activitie-figures .small {
-        width: 95%;
+        width: 100%;
         height: auto;
     }
     #activitie-figures .figure {
         height: 226px;
-        max-width: 100%;
+        width: 90%;
         margin-bottom: 3%;
     }
     #activitie-figures .hight .figure .container b {
