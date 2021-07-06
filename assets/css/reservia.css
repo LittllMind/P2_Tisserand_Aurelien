@@ -14,10 +14,20 @@
     font-style: normal;
 }
 
-#page {
+html {
     width: 100%;
+}
+
+body {
+    max-width: 100%;
+}
+
+#page {
+    width: 96%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    padding-left: 2%;
 }
 
 @media screen and (max-width: 520px) {
@@ -30,15 +40,14 @@
 /* -------------------------------- H E A D E R                 */
 
 header {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    top: 0;
     height: 8em;
     width: 100%;
     display: flex;
-    margin-left: 1%;
+    position: absolute;
     justify-content: space-between;
+    align-items: center;
+    top: 0;
+    margin-left: 1%;
 }
 
 header #logo {
@@ -50,56 +59,57 @@ header #logo img {
 }
 
 header #registration {
-    padding-right: 4em;
     display: flex;
+    padding-right: 4em;
 }
 
 header #registration a {
-    color: #4F94FC;
+    position: relative;
     background-color: inherit;
     border: none;
     outline: none;
     cursor: default;
+    text-decoration: none;
     transition: 0.3s;
-    position: relative;
     z-index: 3;
     font: 0.9em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
+    color: #4F94FC;
 }
 
 
 /* -------------------------------- N A V                  */
 
 .nav {
-    top: 0;
-    height: 3.6em;
-    padding-top: 0.5em;
     width: 100%;
-    position: absolute;
+    height: 3.6em;
     display: flex;
-    align-items: center;
+    position: absolute;
     justify-content: flex-end;
+    align-items: center;
+    top: 0;
+    padding-top: 0.5em;
 }
 
 .nav #navigation {
-    padding-right: 8em;
     width: 30%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding-right: 8em;
     margin-left: 30%;
 }
 
 .nav #navigation a {
-    padding-top: 3.8em;
     width: 50%;
     height: 50%;
-    transition: 0.3s;
-    z-index: 2;
-    border-top: 3.5px solid #F2F2F2;
     text-align: center;
     text-decoration: none;
-    color: #4F5255;
+    transition: 0.3s;
+    z-index: 2;
     font: 0.9em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
+    color: #4F5255;
+    border-top: 3.5px solid #F2F2F2;
+    padding-top: 3.8em;
 }
 
 @media screen and (min-width: 520px) {
@@ -120,7 +130,6 @@ header #registration a {
         top: 4em;
         left: -11em;
         width: 145%;
-        justify-content: left;
     }
     .nav #navigation {
         float: none;
@@ -158,7 +167,7 @@ header #registration a {
 /* -------------------------------- S E A R C H               */
 
 .search {
-    padding-top: 8em;
+    padding-top: 7em;
     padding-left: 1%;
     margin-bottom: 3%;
     display: flex;
@@ -180,8 +189,6 @@ header #registration a {
     height: 49px;
     width: 36%;
     align-items: center;
-    margin-top: 2%;
-    margin-bottom: 2%;
 }
 
 .group-search-localise {
@@ -195,12 +202,10 @@ header #registration a {
     border: thin solid #E9ECEF;
 }
 
-.group-search-localise i {
-    align-self: center;
-}
+.group-search-localise i {}
 
 .group-search-input {
-    width: 64.61%;
+    width: 50.61%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -210,7 +215,7 @@ header #registration a {
 .group-search-input input {
     width: 100%;
     height: 45px;
-    font: 1em 'raleway', Calibri, Optima, Arial, sans-serif;
+    font: 1em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
     border: thin solid #E9ECEF;
 }
 
@@ -232,6 +237,7 @@ header #registration a {
     align-self: center;
     text-decoration: none;
     color: white;
+    font: 80% 'ralewaybold', Calibri, Optima, Arial, sans-serif;
 }
 
 @media screen and (max-width: 769px) {
@@ -248,7 +254,7 @@ header #registration a {
         font: bold 1.2em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
     }
     .group-search {
-        width: 90%;
+        width: 94%;
     }
     .group-search-localise {
         width: 14.3%;
@@ -301,6 +307,8 @@ header #registration a {
 }
 
 .filtres h1 {
+    display: flex;
+    align-self: flex-start;
     font: bold 1.3em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
     padding-left: 0;
     margin-left: 0;
@@ -319,8 +327,10 @@ header #registration a {
     align-items: center;
 }
 
-.filtres ul li .filtre {
-    margin-right: 50px;
+.filtres ul .filtre {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .filtres ul .filtre .icon {
@@ -333,18 +343,23 @@ header #registration a {
 .filtres ul li i {
     background-color: #DEEBFF;
     border: thin solid #DEEBFF;
-    margin: 0 auto;
+    margin: auto;
+    display: flex;
     border-radius: 50%;
-    width: 38px;
-    height: 38px;
-    padding-top: 17px;
-    padding-left: 17px;
+    width: 53px;
+    height: 53px;
     z-index: 1;
     color: #0065FC;
     position: absolute;
 }
 
-.filtres i:hover {
+.fa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filtres li:hover i {
     transition: 0.5s;
     background-color: #0065FC;
     color: #DEEBFF;
@@ -353,20 +368,19 @@ header #registration a {
 
 .filtres li:hover b {
     color: #0065FC;
-    border: thin solid #0065FC;
 }
 
 .filtres ul li b {
+    height: 50px;
     display: flex;
+    align-items: center;
     border: 3px solid #F2F2F2;
     border-radius: 30px 30px 30px 30px;
     font: 100% 'ralewaybold', Calibri, Optima, Arial, sans-serif;
-    height: 50px;
-    margin-left: 8px;
-    margin-right: 10px;
-    padding-right: 10px;
+    margin-left: 15px;
+    margin-right: 20px;
+    padding-right: 20px;
     padding-left: 50px;
-    align-items: center;
 }
 
 @media screen and (max-width: 1260px) and (min-width: 520px) {
@@ -386,7 +400,8 @@ header #registration a {
         flex-wrap: wrap;
     }
     .filtres ul {
-        flex-wrap: wrap;
+        padding-left: 0px;
+        margin-left: 0px;
     }
     .filtres ul li {
         margin-top: 2%;
@@ -394,11 +409,6 @@ header #registration a {
     }
     .filtres ul li i {
         border: thin solid #DEEBFF;
-        border-radius: 50%;
-        width: 38px;
-        height: 38px;
-        padding-top: 17px;
-        padding-left: 17px;
         z-index: 1;
         color: #0065FC;
         position: absolute;
@@ -414,9 +424,8 @@ header #registration a {
 /* -------------------------------- I N F O                    */
 
 .info .detail {
-    flex-direction: row;
     display: flex;
-    align-items: center;
+    flex-direction: row;
 }
 
 .info .detail i {
@@ -426,10 +435,11 @@ header #registration a {
 }
 
 .info .detail .fa {
-    color: #0065FC;
-    width: 30px;
+    width: 20px;
+    height: 20px;
     border: thin solid #F2F2F2;
     border-radius: 50%;
+    color: #0065FC;
     padding: 0.5%;
 }
 
@@ -437,7 +447,7 @@ header #registration a {
     align-self: center;
     font: 1em 'raleway', Calibri, Optima, Arial, sans-serif;
     margin-left: 1.7%;
-    width: 50%;
+    width: 100%;
 }
 
 @media screen and (max-width: 520px) {
@@ -445,7 +455,7 @@ header #registration a {
         margin-bottom: 1em;
     }
     .info .detail span {
-        width: 70%;
+        width: 80%;
     }
 }
 
@@ -455,12 +465,11 @@ header #registration a {
 #hostings {
     display: flex;
     flex-direction: row;
-    height: 730px;
     width: 100%;
 }
 
 .hosting {
-    /* 390 / 594 */
+    height: auto;
     background-color: #F2F2F2;
     border-radius: 20px;
     float: left;
@@ -469,26 +478,10 @@ header #registration a {
     justify-content: center;
     min-width: 65%;
     margin-right: 2%;
-    height: 100%;
 }
-
-
-/*
-@media screen and (max-width: 992px) {
-    .hosting {
-        background-color: #1818;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .hosting {
-        background-color: #898918;
-    }
-}
-*/
 
 .hosting h1 {
-    padding-left: 2.3404%;
+    padding-left: 5.5%;
     padding-top: 2%;
     font: bold 1.4em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
 }
@@ -496,16 +489,18 @@ header #registration a {
 .hosting-figures {
     display: flex;
     flex-wrap: wrap;
-    width: 90%;
+    width: 96%;
     margin: 0 auto;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .hosting-figures a {}
 
 .hosting-figures .figure {
-    margin-bottom: 0.5em;
-    margin: 2%;
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-bottom: 0.4%;
+    margin-top: 0.4%;
     max-width: 28%;
     height: 250px;
 }
@@ -517,7 +512,7 @@ header #registration a {
     flex-direction: column;
     overflow: hidden;
     width: 100%;
-    height: 45%;
+    height: 55%;
     background-color: #F2F2F2;
     border-radius: 20px 20px 0 0;
     box-shadow: 0 0 3px #E5E5E5;
@@ -543,12 +538,18 @@ header #registration a {
 }
 
 .hosting-figures .container b {
+    margin-left: 4%;
     font: bold 1em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
 }
 
 .hosting-figures .container p {
-    padding-top: 5%;
+    margin-left: 4%;
     font: bold 0.9em 'raleway', Calibri, Optima, Arial, sans-serif;
+}
+
+.hosting-figures .container .rate {
+    margin-left: 4%;
+    margin-bottom: 2%;
 }
 
 .hosting-figures .figure .container .fa-star {
@@ -565,7 +566,7 @@ header #registration a {
 }
 
 .hosting a h1 {
-    padding-left: 2.3404%;
+    padding-left: 5.5%;
     font: bold 1.2em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
 }
 
@@ -583,6 +584,12 @@ header #registration a {
         margin: 2%;
         max-width: 28%;
         height: 250px;
+    }
+}
+
+@media screen and (min-width: 520px) and (max-width: 830px) {
+    .hosting-figures .figure {
+        max-width: 40%;
     }
 }
 
@@ -641,20 +648,21 @@ header #registration a {
 
 .popular {
     /* 185 / 594 */
-    height: 730px;
+    height: auto;
+    height: 98%;
     display: flex;
     flex-direction: column;
-    padding-top: 3%;
-    background-color: #F2F2F2;
-    border-radius: 20px;
     float: right;
-    height: 98%;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    padding-top: 3%;
     min-width: 20%;
 }
 
 .popular .title {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .popular .title h1 {
@@ -666,6 +674,7 @@ header #registration a {
 .popular .title i {
     float: right;
     align-self: center;
+    justify-content: center;
     padding-right: 3%;
 }
 
@@ -701,7 +710,7 @@ header #registration a {
 #popular-figures .figure img {
     display: block;
     align-self: center;
-    width: 210%;
+    width: 140%;
     position: relative;
 }
 
@@ -720,6 +729,11 @@ header #registration a {
 
 #popular-figures .container p {
     font: 1em 'raleway', Calibri, Optima, Arial, sans-serif;
+}
+
+.hosting-figures .container .rate {
+    margin-left: 4%;
+    margin-bottom: 2%;
 }
 
 #popular-figures .figure .container .fa-star {
@@ -832,7 +846,7 @@ header #registration a {
 }
 
 .activitie h1 {
-    font: bold 1.7em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
+    font: bold 1.4em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
 }
 
 #activitie-figures {
@@ -981,7 +995,7 @@ footer {
 
 footer h1 {
     font: bold 1em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
-    width: 10%;
+    width: 100%;
     margin-top: 10%;
 }
 
