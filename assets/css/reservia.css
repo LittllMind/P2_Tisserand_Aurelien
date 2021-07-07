@@ -268,7 +268,10 @@ header #registration a {
     .group-search-button a {
         height: 100%;
         color: transparent;
-        background: url(../images/icons/magnifying-glass.png) center no-repeat;
+        mask-image: url(../images/icons/search-solid.svg);
+        color: white;
+        fill: white;
+        width: 60%;
     }
 }
 
@@ -290,7 +293,8 @@ header #registration a {
     }
     .group-search-button a {
         color: transparent;
-        background: url(../images/icons/magnifying-glass.png) center no-repeat;
+        background: url(../images/icons/search-solid.svg) center no-repeat;
+        width: 60%;
     }
 }
 
@@ -481,17 +485,17 @@ header #registration a {
 }
 
 .hosting h1 {
-    padding-left: 5.5%;
-    padding-top: 2%;
-    font: bold 1.4em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
+    padding-left: 5.7%;
+    padding-top: 20px;
+    font: bold 1.2em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
 }
 
 .hosting-figures {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     width: 96%;
     margin: 0 auto;
-    justify-content: center;
 }
 
 .hosting-figures a {}
@@ -499,10 +503,10 @@ header #registration a {
 .hosting-figures .figure {
     margin-right: 2%;
     margin-left: 2%;
-    margin-bottom: 0.4%;
-    margin-top: 0.4%;
+    margin-bottom: 4%;
+    margin-top: 1%;
     max-width: 28%;
-    height: 250px;
+    height: 160px;
 }
 
 .hosting-figures .figure .figure-image {
@@ -512,7 +516,7 @@ header #registration a {
     flex-direction: column;
     overflow: hidden;
     width: 100%;
-    height: 55%;
+    height: 63%;
     background-color: #F2F2F2;
     border-radius: 20px 20px 0 0;
     box-shadow: 0 0 3px #E5E5E5;
@@ -531,6 +535,7 @@ header #registration a {
 .hosting-figures .figure .container {
     text-align: left;
     width: 100%;
+    height: 37%;
     background-color: #FFFFFF;
     border: 5px solid #FFFFFF;
     border-radius: 0 0 20px 20px;
@@ -538,13 +543,17 @@ header #registration a {
 }
 
 .hosting-figures .container b {
+    margin: unset;
     margin-left: 4%;
-    font: bold 1em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
+    font: bold 0.9em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
 }
 
 .hosting-figures .container p {
+    margin: 0;
+    margin-top: 2%;
+    margin-bottom: 2%;
     margin-left: 4%;
-    font: bold 0.9em 'raleway', Calibri, Optima, Arial, sans-serif;
+    font: bold 0.8em 'raleway', Calibri, Optima, Arial, sans-serif;
 }
 
 .hosting-figures .container .rate {
@@ -552,11 +561,16 @@ header #registration a {
     margin-bottom: 2%;
 }
 
+.hosting-figures .figure .container span .fa {}
+
 .hosting-figures .figure .container .fa-star {
+    width: 10%;
+    font-size: unset;
     color: #F2F2F2;
 }
 
 .hosting-figures .figure .container .checked {
+    font-size: unset;
     color: #0065FC;
 }
 
@@ -567,6 +581,7 @@ header #registration a {
 
 .hosting a h1 {
     padding-left: 5.5%;
+    padding-bottom: 3%;
     font: bold 1.2em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
 }
 
@@ -648,14 +663,12 @@ header #registration a {
 
 .popular {
     /* 185 / 594 */
-    height: auto;
-    height: 98%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     float: right;
     border-radius: 20px;
     background-color: #F2F2F2;
-    padding-top: 3%;
     min-width: 20%;
 }
 
@@ -667,20 +680,20 @@ header #registration a {
 
 .popular .title h1 {
     padding-left: 6%;
-    padding-top: 2%;
-    font: bold 1.4em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
+    padding-top: 20px;
+    font: bold 1.2em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
 }
 
 .popular .title i {
     float: right;
     align-self: center;
     justify-content: center;
-    padding-right: 3%;
+    padding-right: 20px;
+    padding-top: 20px;
 }
 
 #popular-figures {
     height: 90%;
-    padding-left: 2%;
     display: flex;
     justify-content: center;
     align-content: space-around;
@@ -688,8 +701,8 @@ header #registration a {
 }
 
 #popular-figures .figure {
+    height: 120px;
     display: flex;
-    height: 150px;
     width: 80%;
     border-radius: 20px 20px 20px 20px;
 }
