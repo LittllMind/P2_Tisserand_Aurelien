@@ -480,14 +480,14 @@ header #registration a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-width: 65%;
+    min-width: 60%;
     margin-right: 2%;
 }
 
 .hosting h1 {
     padding-left: 5.7%;
     padding-top: 20px;
-    font: bold 1.2em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
+    font: bold 1.3em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
 }
 
 .hosting-figures {
@@ -561,11 +561,11 @@ header #registration a {
     margin-bottom: 2%;
 }
 
-.hosting-figures .figure .container span .fa {}
+.hosting-figures .figure .container i {
+    font-size: 12px;
+}
 
 .hosting-figures .figure .container .fa-star {
-    width: 10%;
-    font-size: unset;
     color: #F2F2F2;
 }
 
@@ -681,7 +681,7 @@ header #registration a {
 .popular .title h1 {
     padding-left: 6%;
     padding-top: 20px;
-    font: bold 1.2em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
+    font: bold 1.3em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
 }
 
 .popular .title i {
@@ -744,7 +744,7 @@ header #registration a {
     font: 1em 'raleway', Calibri, Optima, Arial, sans-serif;
 }
 
-.hosting-figures .container .rate {
+#popular-figures .container .rate {
     margin-left: 4%;
     margin-bottom: 2%;
 }
