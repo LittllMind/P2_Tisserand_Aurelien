@@ -32,7 +32,7 @@ body {
 
 @media screen and (max-width: 520px) {
     #page {
-        min-width: 110%;
+        min-width: 100%;
     }
 }
 
@@ -281,7 +281,7 @@ header #registration a {
         padding-bottom: 20px;
     }
     .group-search {
-        width: 84%;
+        width: 92%;
     }
     .group-search-localise {
         width: 14.3%;
@@ -296,9 +296,7 @@ header #registration a {
     .group-search-button a {
         height: 100%;
         color: transparent;
-        mask-image: url(../images/icons/search-solid.svg);
-        color: white;
-        fill: white;
+        background-image: url(../images/icons/magnifying-glass.png) center no-repeat;
         width: 60%;
     }
 }
@@ -649,6 +647,7 @@ header #registration a {
         align-items: center;
     }
     .hosting {
+        width: 100%;
         background-color: inherit;
         max-width: unset;
         border-radius: 0px;
@@ -664,10 +663,11 @@ header #registration a {
         justify-content: unset;
         align-items: center;
         justify-content: center;
-        width: 97%;
+        width: 102%;
+        padding-left: 3.2%;
     }
     .hosting-figures .figure {
-        max-width: 88%;
+        max-width: 100%;
         padding-bottom: 2%;
     }
     .hosting a h1 {
@@ -859,7 +859,7 @@ header #registration a {
 
 @media screen and (max-width: 520px) {
     .populars {
-        width: 102%;
+        width: 105%;
     }
     .popular {
         width: 100%;
@@ -868,19 +868,16 @@ header #registration a {
         height: 100%;
         left: 0;
         border-radius: 0px;
-        margin-right: 10%;
+        margin-right: 3%;
         padding-bottom: 1em;
-        width: 100%;
     }
     .popular h1 {
         margin-left: 6%;
         font: bold 0.9em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
     }
-    #popular-figures {
-        padding-left: 7%;
-    }
+    #popular-figures {}
     #popular-figures .figure {
-        width: 88%;
+        width: 90%;
         height: 140px;
         margin-top: 0.5em;
         margin-bottom: 0.5em;
@@ -1003,10 +1000,10 @@ header #registration a {
         width: 100%;
     }
     .activitie {
+        height: auto;
         display: flex;
         flex-direction: column;
-        height: auto;
-        width: auto;
+        width: 100%;
     }
     .activitie h1 {
         padding-bottom: 2em;
@@ -1014,7 +1011,8 @@ header #registration a {
     }
     .activitie #activitie-figures {
         flex-direction: column;
-        margin-left: 3%;
+        justify-content: center;
+        align-items: center;
     }
     #activitie-figures .hight {
         width: 100%;
@@ -1026,7 +1024,7 @@ header #registration a {
     }
     #activitie-figures .figure {
         height: 226px;
-        width: 90%;
+        width: 94%;
         margin-bottom: 3%;
     }
     #activitie-figures .hight .figure .container b {
