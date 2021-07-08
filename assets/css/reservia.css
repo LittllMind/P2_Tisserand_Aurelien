@@ -849,7 +849,7 @@ header #registration a {
 
 @media screen and (max-width: 520px) {
     .populars {
-        width: 115%;
+        width: 102%;
     }
     .popular {
         width: 100%;
@@ -858,7 +858,7 @@ header #registration a {
         height: 100%;
         left: 0;
         border-radius: 0px;
-        margin-right: 6%;
+        margin-right: 10%;
         padding-bottom: 1em;
         width: 100%;
     }
@@ -871,6 +871,7 @@ header #registration a {
     }
     #popular-figures .figure {
         width: 88%;
+        height: 140px;
         margin-top: 0.5em;
         margin-bottom: 0.5em;
     }
