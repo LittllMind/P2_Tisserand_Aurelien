@@ -477,6 +477,10 @@ header #registration a {
     width: 100%;
 }
 
+.hostings {
+    width: auto;
+}
+
 .hosting {
     height: auto;
     background-color: #F2F2F2;
@@ -485,7 +489,7 @@ header #registration a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 67%;
+    max-width: 95%;
     margin-right: 2%;
 }
 
@@ -511,7 +515,7 @@ header #registration a {
     margin-bottom: 4%;
     margin-top: 1%;
     max-width: 28%;
-    height: 160px;
+    height: 180px;
 }
 
 .hosting-figures .figure .figure-image {
@@ -635,31 +639,36 @@ header #registration a {
         flex-direction: column-reverse;
         align-items: center;
         position: relative;
+        width: 100%;
+    }
+    .hostings {
+        width: 110%;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .hosting {
         background-color: inherit;
         max-width: unset;
         border-radius: 0px;
         padding-left: 0px;
-        margin-left: 1%;
-        width: 103%;
-    }
-    .hosting-figures {
-        justify-content: unset;
-        max-width: 100%;
+        padding-right: 13%;
     }
     .hosting h1 {
-        padding-top: 1.5em;
-        padding-left: 1em;
+        margin-left: 1%;
+        padding-top: 25px;
         font: bold 1.3em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
     }
     .hosting-figures {
-        width: 100%;
-        align-self: left;
-        flex-wrap: wrap;
+        justify-content: unset;
+        align-items: center;
+        justify-content: center;
+        width: 97%;
     }
     .hosting-figures .figure {
         max-width: 88%;
+        padding-bottom: 2%;
     }
     .hosting a h1 {
         padding-left: 5%;
@@ -710,7 +719,7 @@ header #registration a {
 }
 
 #popular-figures .figure {
-    height: 130px;
+    height: 140px;
     display: flex;
     width: 82%;
     border-radius: 20px 20px 20px 20px;
@@ -804,6 +813,7 @@ header #registration a {
     }
     #popular-figures {
         flex-direction: row;
+        align-items: center;
     }
     #popular-figures .figure {
         flex-direction: column;
