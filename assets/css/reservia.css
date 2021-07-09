@@ -613,12 +613,13 @@ header #registration a {
 
 @media screen and (max-width: 1260px) and (min-width: 520px) {
     #hostings {
-        float: left;
         flex-direction: column;
         height: auto;
+        width: 100%;
     }
     .hosting {
         margin-right: unset;
+        width: 100%;
     }
     .hosting-figures .figure {
         margin-bottom: 0.5em;
@@ -629,6 +630,9 @@ header #registration a {
 }
 
 @media screen and (min-width: 520px) and (max-width: 830px) {
+    .hosting {
+        max-width: 100%;
+    }
     .hosting-figures .figure {
         max-width: 40%;
     }
@@ -1053,11 +1057,19 @@ header #registration a {
 
 /* -------------------------------- F O O T E R  */
 
-footer {
+.footer__background {
     background-color: #F2F2F2;
     display: flex;
+    min-width: 101%;
+    padding-bottom: 10%;
+    padding-left: 7%;
+    padding-right: 20px;
+}
+
+footer {
+    display: flex;
     justify-content: center;
-    width: 100%;
+    min-width: 100%;
 }
 
 footer h1 {
@@ -1081,17 +1093,27 @@ footer ul li {
     margin-bottom: 1em;
 }
 
+@media screen and (max-width: 768) {
+    .footer__background {
+        margin-left: 20%;
+        padding-bottom: 2%;
+    }
+}
+
 @media screen and (max-width: 520px) {
+    .footer__background {
+        flex-direction: column;
+    }
     footer {
         position: absolute;
         justify-self: left;
         flex-direction: column;
+        padding-bottom: 6%;
     }
     footer ul {}
     .list {
         width: 110%;
         margin-right: 20px;
-        padding-left: 5%;
-        background-color: #818;
+        padding-left: 2%;
     }
 }
