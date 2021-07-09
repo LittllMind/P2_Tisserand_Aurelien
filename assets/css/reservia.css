@@ -214,19 +214,16 @@ header #registration a {
 
 .group-search-input input {
     width: 100%;
-    height: 45px;
+    height: 47px;
     font: 1em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
     border: thin solid #E9ECEF;
-}
-
-.group-search-input input:focus {
-    outline: none;
 }
 
 .group-search-button {
     width: 25.14%;
     height: 100%;
     background-color: #0065FC;
+    border: 1px solid #0065FC;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -237,7 +234,7 @@ header #registration a {
     align-self: center;
     text-decoration: none;
     color: white;
-    font: 80% 'ralewaybold', Calibri, Optima, Arial, sans-serif;
+    font: 85% 'ralewaybold', Calibri, Optima, Arial, sans-serif;
 }
 
 @media screen and (max-width: 769px) {
@@ -275,19 +272,29 @@ header #registration a {
     }
     .search-indication h1 {
         font: bold 1.2em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
-        width: 60%;
+        width: 70%;
     }
     .search-indication h2 {
         padding-bottom: 20px;
     }
     .group-search {
         width: 92%;
+        border-top: thin solid #E9ECEF;
+        border-bottom: thin solid #E9ECEF;
+        border-radius: 0 16px 16px 0;
     }
     .group-search-localise {
         width: 14.3%;
     }
     .group-search-input {
         width: 71.4%;
+    }
+    .group-search-input input {
+        border: 0px solid #E9ECEF;
+    }
+    .group-search-input input:focus {
+        outline: none;
+        border: 0px solid #E9ECEF;
     }
     .group-search-button {
         width: 14.3%;
@@ -315,7 +322,6 @@ header #registration a {
 
 .filtres h1 {
     display: flex;
-    align-self: flex-start;
     font: bold 1.3em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
     padding-left: 0;
     margin-left: 0;
@@ -391,12 +397,18 @@ header #registration a {
 }
 
 @media screen and (max-width: 1260px) and (min-width: 520px) {
+    .filtres h1 {
+        align-self: flex-start;
+    }
     .filtres ul li {
         padding-bottom: 2%;
     }
 }
 
 @media screen and (max-width: 768px) and (orientation: landscape) {
+    .filtres h1 {
+        align-self: flex-start;
+    }
     .filtres ul li {
         padding-bottom: 2%;
     }
@@ -405,6 +417,9 @@ header #registration a {
 @media screen and (max-width: 520px) {
     .filtres {
         flex-wrap: wrap;
+    }
+    .filtres h1 {
+        align-self: flex-start;
     }
     .filtres ul {
         padding-left: 0px;
@@ -1036,7 +1051,7 @@ header #registration a {
 }
 
 
-/* -------------------------------- F O O T E R             */
+/* -------------------------------- F O O T E R  */
 
 footer {
     background-color: #F2F2F2;
@@ -1068,12 +1083,15 @@ footer ul li {
 
 @media screen and (max-width: 520px) {
     footer {
+        position: absolute;
         justify-self: left;
-        width: 120%;
         flex-direction: column;
-        margin-right: 10%;
     }
+    footer ul {}
     .list {
-        width: 100%;
+        width: 110%;
+        margin-right: 20px;
+        padding-left: 5%;
+        background-color: #818;
     }
 }
