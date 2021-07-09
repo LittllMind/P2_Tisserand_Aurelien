@@ -725,8 +725,9 @@ header #registration a {
     float: right;
     align-self: center;
     justify-content: center;
-    padding-right: 20px;
+    padding-right: 50px;
     padding-top: 20px;
+    font-size: 25px;
 }
 
 #popular-figures {
@@ -892,10 +893,17 @@ header #registration a {
         padding-bottom: 1em;
     }
     .popular h1 {
-        margin-left: 6%;
+        margin-left: 1%;
         font: bold 0.9em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
     }
-    #popular-figures {}
+    .popular .title i {
+        float: right;
+        align-self: center;
+        justify-content: center;
+        padding-right: 40px;
+        padding-top: 20px;
+        font-size: 20px;
+    }
     #popular-figures .figure {
         width: 90%;
         height: 140px;
