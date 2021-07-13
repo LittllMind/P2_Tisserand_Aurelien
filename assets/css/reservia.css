@@ -121,7 +121,13 @@ header #registration a {
 
 @media screen and (max-width: 768px) {
     .nav #navigation {
-        float: left;
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    .nav #navigation {
+        width: 35%;
     }
 }
 
@@ -135,7 +141,7 @@ header #registration a {
         float: none;
         padding-right: 0px;
         padding-left: 0px;
-        width: 100%;
+        width: 96%;
         z-index: 2;
     }
     .nav #navigation a {
@@ -157,12 +163,6 @@ header #registration a {
     }
 }
 
-@media screen and (max-width: 768px) and (orientation: landscape) {
-    .nav #navigation {
-        width: 35%;
-    }
-}
-
 
 /* -------------------------------- S E A R C H               */
 
@@ -173,6 +173,10 @@ header #registration a {
     display: flex;
     flex-direction: column;
     width: 100%;
+}
+
+.search-indication {
+    width: 96%;
 }
 
 .search-indication h1 {
@@ -237,7 +241,7 @@ header #registration a {
     font: 85% 'ralewaybold', Calibri, Optima, Arial, sans-serif;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 1200px) {
     .group-search {
         width: 60%;
     }
@@ -619,7 +623,7 @@ header #registration a {
     }
     .hosting {
         margin-right: unset;
-        width: 100%;
+        max-width: 100%;
     }
     .hosting-figures .figure {
         margin-bottom: 0.5em;
@@ -660,7 +664,7 @@ header #registration a {
         width: 100%;
     }
     .hostings {
-        width: 110%;
+        width: 90%;
         float: left;
         display: flex;
         justify-content: center;
@@ -672,7 +676,6 @@ header #registration a {
         max-width: unset;
         border-radius: 0px;
         padding-left: 0px;
-        padding-right: 13%;
     }
     .hosting h1 {
         margin-left: 1%;
@@ -683,8 +686,7 @@ header #registration a {
         justify-content: unset;
         align-items: center;
         justify-content: center;
-        width: 102%;
-        padding-left: 3.2%;
+        width: 100%;
     }
     .hosting-figures .figure {
         max-width: 100%;
@@ -822,7 +824,7 @@ header #registration a {
     color: #212529;
 }
 
-@media screen and (max-width: 1260px) and (min-width: 680px) {
+@media screen and (max-width: 1260px) and (min-width: 520px) {
     .popular {
         margin-top: 2%;
         /* 185 / 594 */
@@ -1031,6 +1033,48 @@ header #registration a {
     }
 }
 
+@media screen and (max-width: 768px) {
+    #activities {
+        padding-bottom: 10%;
+        padding-top: 5%;
+        width: 100%;
+    }
+    .activitie {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .activitie h1 {
+        padding-bottom: 2em;
+        font: bold 1.2em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
+    }
+    .activitie #activitie-figures {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #activitie-figures .hight {
+        width: 100%;
+        height: 200px;
+    }
+    #activitie-figures .small {
+        width: 100%;
+        height: auto;
+    }
+    #activitie-figures .figure {
+        height: 200px;
+        width: 94%;
+        margin-bottom: 3%;
+    }
+    #activitie-figures .hight .figure .container b {
+        font: bold 1em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
+    }
+    #activitie-figures .small .container b {
+        font: bold 1em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
+    }
+}
+
 @media screen and (max-width: 520px) {
     #activities {
         padding-bottom: 10%;
@@ -1079,16 +1123,15 @@ header #registration a {
 .footer__background {
     background-color: #F2F2F2;
     display: flex;
-    min-width: 101%;
-    padding-bottom: 2%;
-    padding-left: 7%;
-    padding-right: 20px;
+    min-width: 103%;
+    height: 110%;
 }
 
 footer {
     display: flex;
     justify-content: center;
     min-width: 100%;
+    height: 110%;
 }
 
 footer h1 {
@@ -1099,6 +1142,7 @@ footer h1 {
 
 .list {
     width: 30%;
+    padding-left: 6%;
 }
 
 footer ul {
@@ -1119,24 +1163,33 @@ footer ul li {
     .footer__background {
         justify-content: space-between;
         padding-bottom: 2%;
-        padding-left: 8%;
     }
 }
 
 @media screen and (max-width: 520px) {
     .footer__background {
         flex-direction: column;
+        padding-left: 6%;
     }
     footer {
-        position: absolute;
-        justify-self: left;
-        flex-direction: column;
-        padding-bottom: 6%;
+        display: flex;
+        justify-content: center;
     }
-    footer ul {}
+    footer h1 {
+        font: bold 1em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
+        width: 100%;
+        margin-top: 10%;
+    }
     .list {
-        width: 110%;
-        margin-right: 20px;
-        padding-left: 2%;
+        width: 80%;
+    }
+    footer ul {
+        list-style-type: none;
+        padding-left: 0px;
+    }
+    footer ul li {
+        font: 0.9em 'raleway', Calibri, Optima, Arial, sans-serif;
+        margin-top: 1em;
+        margin-bottom: 1em;
     }
 }
