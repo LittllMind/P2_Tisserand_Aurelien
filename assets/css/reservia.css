@@ -664,6 +664,17 @@ header #registration a {
         width: 100%;
     }
     .hostings {
+        width: auto;
+    }
+    .hosting {
+        background-color: unset;
+        border-radius: 0px;
+        display: flex;
+        max-width: 94%;
+        padding-right: 2%;
+    }
+    /*    
+    .hostings {
         width: 90%;
         float: left;
         display: flex;
@@ -676,7 +687,7 @@ header #registration a {
         max-width: unset;
         border-radius: 0px;
         padding-left: 0px;
-    }
+    }*/
     .hosting h1 {
         margin-left: 1%;
         padding-top: 25px;
@@ -1124,14 +1135,12 @@ header #registration a {
     background-color: #F2F2F2;
     display: flex;
     min-width: 103%;
-    height: 110%;
 }
 
 footer {
     display: flex;
     justify-content: center;
     min-width: 100%;
-    height: 110%;
 }
 
 footer h1 {
