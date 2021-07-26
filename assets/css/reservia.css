@@ -1140,7 +1140,6 @@ footer {
     display: flex;
     justify-content: center;
     min-width: 100%;
-    background-color: #F2F2F2;
 }
 
 footer h1 {
@@ -1176,13 +1175,10 @@ footer ul li {
 }
 
 @media screen and (max-width: 520px) {
-    .footer__background {
-        flex-direction: column;
-        padding-left: 6%;
-    }
     footer {
         display: flex;
         justify-content: center;
+        flex-direction: column;
     }
     footer h1 {
         font: bold 1em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
