@@ -1132,7 +1132,6 @@ header #registration a {
 /* -------------------------------- F O O T E R  */
 
 .footer__background {
-    background-color: #F2F2F2;
     display: flex;
     min-width: 103%;
 }
@@ -1141,6 +1140,7 @@ footer {
     display: flex;
     justify-content: center;
     min-width: 100%;
+    background-color: #F2F2F2;
 }
 
 footer h1 {
