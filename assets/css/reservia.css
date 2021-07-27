@@ -32,7 +32,7 @@ body {
 
 @media screen and (max-width: 520px) {
     #page {
-        min-width: 97%;
+        min-width: 96%;
     }
 }
 
@@ -499,7 +499,7 @@ header #registration a {
 #hostings {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    min-width: 100%;
 }
 
 .hostings {
@@ -672,13 +672,13 @@ header #registration a {
         width: 100%;
     }
     .hostings {
-        width: auto;
+        width: 100%;
     }
     .hosting {
         background-color: unset;
         border-radius: 0px;
         display: flex;
-        max-width: 94%;
+        max-width: 95%;
         padding-right: 2%;
     }
     .hosting h1 {
@@ -694,7 +694,7 @@ header #registration a {
     }
     .hosting-figures .figure {
         max-width: 100%;
-        padding-bottom: 2%;
+        padding-bottom: 6%;
     }
     .hosting a h1 {
         padding-left: 5%;
@@ -885,11 +885,21 @@ header #registration a {
 }
 
 @media screen and (max-width: 520px) {
+    .popular {
+        /* 185 / 594 */
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        float: right;
+        border-radius: 20px;
+        background-color: #F2F2F2;
+    }
     .populars {
         min-width: 103%;
+        margin-left: 3%;
     }
     .popular {
-        min-width: 103%;
+        min-width: 106%;
         justify-content: center;
         z-index: 3;
         height: 100%;
@@ -1060,12 +1070,15 @@ header #registration a {
         align-items: center;
     }
     #activitie-figures .hight {
+        display: flex;
+        align-items: center;
         width: 100%;
         height: 200px;
     }
     #activitie-figures .small {
         width: 100%;
         height: auto;
+        align-items: center;
     }
     #activitie-figures .figure {
         height: 200px;
@@ -1128,7 +1141,7 @@ header #registration a {
 footer {
     display: flex;
     justify-content: center;
-    width: 100%;
+    min-width: 100%;
     background-color: #F2F2F2;
 }
 
@@ -1165,11 +1178,19 @@ footer ul li {
 }
 
 @media screen and (max-width: 520px) {
-    footer {
+    .footer-background {
+        background-color: #1818;
+        width: 100%;
+        height: 446px;
+    }
+    .footer {
+        min-width: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: stretch;
         flex-direction: column;
-        à
+        padding-right: 2%;
+        position: relative;
+        left: 0;
     }
     footer h1 {
         font: bold 1em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
