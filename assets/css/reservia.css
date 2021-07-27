@@ -295,6 +295,7 @@ header #registration a {
         border-top: thin solid #E9ECEF;
         border-bottom: thin solid #E9ECEF;
         border-radius: 0 16px 16px 0;
+        margin-left: 2.5%;
     }
     .group-search-localise {
         width: 14.3%;
