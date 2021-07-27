@@ -141,7 +141,7 @@ header #registration a {
     .nav {
         top: 4em;
         left: -11em;
-        width: 146%;
+        width: 142%;
     }
     .nav #navigation {
         float: none;
@@ -1186,6 +1186,13 @@ footer ul li {
         flex-direction: column;
         padding-right: 2%;
     }
+    .footer-background {
+        background-color: #F2F2F2;
+        width: 100%;
+        padding-left: 20%;
+        margin-left: 10%;
+        padding-bottom: 10%;
+    }
     footer h1 {
         font: bold 1em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
         width: 100%;
@@ -1193,11 +1200,10 @@ footer ul li {
     }
     .list {
         width: 80%;
-        padding-left: unset;
+        padding-left: 10%;
     }
     footer ul {
         list-style-type: none;
-        padding-left: 0px;
     }
     footer ul li {
         font: 0.9em 'raleway', Calibri, Optima, Arial, sans-serif;
