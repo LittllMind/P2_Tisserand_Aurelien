@@ -1141,7 +1141,7 @@ header #registration a {
 footer {
     display: flex;
     justify-content: center;
-    min-width: 100%;
+    width: 100%;
     background-color: #F2F2F2;
 }
 
@@ -1153,7 +1153,7 @@ footer h1 {
 
 .list {
     width: 30%;
-    padding-left: 6%;
+    padding-left: 7%;
 }
 
 footer ul {
@@ -1178,19 +1178,13 @@ footer ul li {
 }
 
 @media screen and (max-width: 520px) {
-    .footer-background {
-        background-color: #1818;
-        width: 100%;
-        height: 446px;
-    }
     .footer {
         min-width: 100%;
         display: flex;
-        justify-content: stretch;
+        justify-content: flex-end;
+        align-items: flex-end;
         flex-direction: column;
         padding-right: 2%;
-        position: relative;
-        left: 0;
     }
     footer h1 {
         font: bold 1em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
@@ -1199,6 +1193,7 @@ footer ul li {
     }
     .list {
         width: 80%;
+        padding-left: unset;
     }
     footer ul {
         list-style-type: none;
