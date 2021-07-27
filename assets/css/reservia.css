@@ -86,7 +86,7 @@ header #registration a {
 /* -------------------------------- N A V                  */
 
 .nav {
-    width: 95%;
+    width: 96%;
     height: 3.6em;
     display: flex;
     position: absolute;
@@ -141,7 +141,7 @@ header #registration a {
     .nav {
         top: 4em;
         left: -11em;
-        width: 142%;
+        width: 146%;
     }
     .nav #navigation {
         float: none;
@@ -284,13 +284,13 @@ header #registration a {
     }
     .search-indication h1 {
         font: bold 1.2em 'ralewaybold', Calibri, Optima, Arial, sans-serif;
-        width: 70%;
+        width: 80%;
     }
     .search-indication h2 {
         padding-bottom: 20px;
     }
     .group-search {
-        width: 92%;
+        width: 95%;
         border-top: thin solid #E9ECEF;
         border-bottom: thin solid #E9ECEF;
         border-radius: 0 16px 16px 0;
@@ -681,21 +681,6 @@ header #registration a {
         max-width: 94%;
         padding-right: 2%;
     }
-    /*    
-    .hostings {
-        width: 90%;
-        float: left;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .hosting {
-        width: 100%;
-        background-color: inherit;
-        max-width: unset;
-        border-radius: 0px;
-        padding-left: 0px;
-    }*/
     .hosting h1 {
         margin-left: 1%;
         padding-top: 25px;
@@ -901,16 +886,17 @@ header #registration a {
 
 @media screen and (max-width: 520px) {
     .populars {
-        width: 105%;
+        min-width: 103%;
     }
     .popular {
-        width: 100%;
+        min-width: 103%;
         justify-content: center;
         z-index: 3;
         height: 100%;
         left: 0;
         border-radius: 0px;
-        margin-right: 3%;
+        padding-left: 4%;
+        margin-left: 1%;
         padding-bottom: 1em;
     }
     .popular h1 {
